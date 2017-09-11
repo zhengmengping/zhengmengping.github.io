@@ -7,7 +7,7 @@
     
 
     <title>
-      剑指offer(1):二维数组中的查找 | 治愈者 
+      &#39;offer&#39; 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,18 +16,13 @@
     
     
 
-    <meta name="description" content="题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer(1):二维数组中的查找 | 治愈者">
-<meta property="og:url" content="http://yoursite.com/2017/09/10/剑指offer(1)/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="&#39;offer&#39;">
+<meta property="og:url" content="http://yoursite.com/offer/index.html">
 <meta property="og:site_name" content="治愈者">
-<meta property="og:description" content="题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
-<meta property="og:image" content="http://yoursite.com/2017/09/10/剑指offer(1)/1.jpg">
-<meta property="og:updated_time" content="2017-09-11T02:16:19.180Z">
+<meta property="og:updated_time" content="2017-09-11T02:20:46.779Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指offer(1):二维数组中的查找 | 治愈者">
-<meta name="twitter:description" content="题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
-<meta name="twitter:image" content="http://yoursite.com/2017/09/10/剑指offer(1)/1.jpg">
+<meta name="twitter:title" content="&#39;offer&#39;">
     
     
     
@@ -159,29 +154,14 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">剑指offer(1):二维数组中的查找</h1>
+    <h1 class="post-title">&#39;offer&#39;</h1>
 
-    
-
-    <div class="post-meta">
-      <time datetime="2017-09-10" class="post-meta__date date">2017-09-10</time> 
-
-      <span class="post-meta__tags tags">
-
-          
-
-          
-
-      </span>
-    </div>
-    
     
 
   </header>
 
   <section id="post-content" class="article-content post">
-    <p><img src="/2017/09/10/剑指offer(1)/1.jpg" alt=""><br>题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。<br><a id="more"></a><br>function Find(target, array)<br>{<br>    var row = array.length;    //行数<br>    var col = array[0].length;    //列数<br>    var r = row-1;    //从左下角开始比较<br>    var c = 0;<br>    while( r &gt;= 0 &amp;&amp; c &lt;= col-1){<br>        if(target &gt; array[r][c]){<br>            c++;<br>        }else if(target &lt; array[r][c]){<br>            r–;<br>        }else{<br>            return true;<br>        }<br>    }<br>    return false;<br>}<br>思路：因为矩阵的特殊性，所以先从最后一行第一列开始比较，小于则向上查找，大于则向后查找。</p>
-
+    
   </section>
 
   <section class="post-comments">
@@ -221,18 +201,6 @@ classes that you can use:
 
 
     
-
-    <script src="/js/awesome-toc.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.awesome_toc({
-                overlay: true,
-                contentId: "post-content",
-            });
-        });
-    </script>
-
-
     
     
     <!--kill ie6 -->
