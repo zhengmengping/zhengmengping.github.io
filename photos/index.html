@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -93,17 +93,16 @@
 
 
 
-<meta name="keywords" content="hexo">
-<meta property="og:type" content="article">
-<meta property="og:title" content="hexo生成博文插入图片">
-<meta property="og:url" content="http://yoursite.com/2017/09/11/hexo博文插入图片/index.html">
+<meta name="description" content="世间万物唯有爱与美食">
+<meta property="og:type" content="website">
+<meta property="og:title" content="photo">
+<meta property="og:url" content="http://yoursite.com/photos/index.html">
 <meta property="og:site_name" content="治愈者的博客">
-<meta property="og:image" content="http://yoursite.com/2017/09/11/hexo博文插入图片/1.jpg">
-<meta property="og:image" content="http://yoursite.com/2017/09/11/hexo博文插入图片/xxxx/图片名.jpg">
-<meta property="og:updated_time" content="2017-09-11T06:56:03.719Z">
+<meta property="og:description" content="世间万物唯有爱与美食">
+<meta property="og:updated_time" content="2018-05-23T12:05:14.193Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo生成博文插入图片">
-<meta name="twitter:image" content="http://yoursite.com/2017/09/11/hexo博文插入图片/1.jpg">
+<meta name="twitter:title" content="photo">
+<meta name="twitter:description" content="世间万物唯有爱与美食">
 
 
 
@@ -131,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/11/hexo博文插入图片/"/>
+  <link rel="canonical" href="http://yoursite.com/photos/"/>
 
 
 
 
 
-  <title>hexo生成博文插入图片 | 治愈者的博客</title>
+  <title>photo | 治愈者的博客</title>
   
 
 
@@ -277,156 +276,18 @@
             
 
   <div id="posts" class="posts-expand">
-    
+  <header class="post-header">
 
-  
+	<h1 class="post-title" itemprop="name headline">photo</h1>
 
-  
-  
-  
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/11/hexo博文插入图片/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="healer">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="治愈者的博客">
-    </span>
+</header>
 
     
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">hexo生成博文插入图片</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-11T10:23:50+08:00">
-                2017-09-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
     
-
-    <div class="post-body" itemprop="articleBody">
-
       
-      
-
-      
-        <p><img src="/2017/09/11/hexo博文插入图片/1.jpg" alt="图片"><br><a id="more"></a><br>1.把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true。<br>2.在你的hexo目录下执行这样一句话npm install hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件，来自dalao：dalao的git。<br>3.等待一小段时间后，再运行hexo n “xxxx”来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹。<br>4.最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：<img src="/2017/09/11/hexo博文插入图片/xxxx/图片名.jpg" alt="你想输入的替代文字">。<br>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。<br>5.最后检查一下，hexo g生成页面后，进入public\2017\02\26\index.html文件中查看相关字段，可以发现，html标签内的语句是<code>&lt;img src=&quot;2017/02/26/xxxx/图片名.jpg&quot;&gt;</code>，而不是<code>&lt;img src=&quot;xxxx/图片名.jpg&quot;&gt;</code>。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</p>
-
-      
-    </div>
-
-    <div>
-      
-        
-      
-    </div>
     
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/09/10/剑指offer(2)/" rel="next" title="剑指offer(2):替换空格">
-                <i class="fa fa-chevron-left"></i> 剑指offer(2):替换空格
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/15/offer/" rel="prev" title="剑指offer(3)">
-                剑指offer(3) <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
@@ -700,10 +561,10 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-
+  
 
   
 
