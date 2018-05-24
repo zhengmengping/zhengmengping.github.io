@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>治愈者的博客</title>
+  
+  <subtitle>世界上最美好的事物都是免费的</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-11-02T14:00:50.242Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>healer</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何用HEXO+github搭建个人博客</title>
+    <link href="http://yoursite.com/2017/11/02/hello/"/>
+    <id>http://yoursite.com/2017/11/02/hello/</id>
+    <published>2017-11-02T13:34:21.000Z</published>
+    <updated>2017-11-02T14:00:50.242Z</updated>
+    
+    <content type="html"><![CDATA[<p>如何用HEXO+github搭建个人博客<br>HEXO是一个简单的、轻量的、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github上。原理：github存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的内容就是讲这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。<br><a id="more"></a><br>系统环境配置：要使用Hexo，需要在你的系统中支持Node.js以及Git。<br>安装Node（必须），作用：用来生成静态页面，到Node.js官网下载和自己电脑相匹配的版本，除了指定安装路径，一路安装即可。<br>安装Git（必须），作用：把本地的hexo内容提交到github上去，申请github账号，作用：是用来做博客的远成仓库、域名、服务器之类的。<br>验证软件是否安装正确：<br>同时按下win键或R键（或点击“开始菜单”&gt;点击“运行”），打开运行窗口，输入“cmd”，然后输入以下命令：<br><img src="/2017/11/02/hello/1.png" alt="图片"><br><img src="/2017/11/02/hello/2.png" alt="图片"><br>显示版本信息，说明安装成功。<br>申请gitub账号：<br>注册完成后，点击“New repository”，新建一个版本库。<br><img src="/2017/11/02/hello/3.png" alt="图片"><br>输入repository name:yourname.github.io(yourname与你的注册用户名一致，这就是你博客的域名了)。<br><img src="/2017/11/02/hello/4.png" alt="图片"><br>到此，github账号申请完成。<br>安装hexo：<br>在自己认为合适的地方创建一个文件夹，这里以E：/hexo为例，首先在E盘目录下创建HEXO文件夹，并在命令行的窗口进入到该目录下<br><img src="/2017/11/02/hello/5.png" alt="图片"><br>在命令行中输入：<br><img src="/2017/11/02/hello/6.png" alt="图片"><br><img src="/2017/11/02/hello/7.png" alt="图片"><br>可能会看到一个WARN，但是不用担心，不会影响正常使用，然后输入：<br>等待进度条安装到100，然后测试hexo是否安装完成，输入：<br><img src="/2017/11/02/hello/8.png" alt="图片"><br><img src="/2017/11/02/hello/9.png" alt="图片"><br>安装完成。<br>HEXO的相关配置：<br>1.初始化HEXO，接着上面的操作，输入：<br><img src="/2017/11/02/hello/10.png" alt="图片"><br>再输入：<br><img src="/2017/11/02/hello/11.png" alt="图片"><br>之后npm将会自动安装你需要的组件，只需等待npm操作即可。<br>2.首次体验HEXO<br>继续操作，同样在命令行输入：<br><img src="/2017/11/02/hello/12.png" alt="图片"><br><img src="/2017/11/02/hello/13.png" alt="图片"><br>然后输入：<br><img src="/2017/11/02/hello/14.png" alt="图片"><br>提示：<br><img src="/2017/11/02/hello/15.png" alt="图片"><br>在浏览器中打开<a href="http://localhost:4000/，你将会看到：" target="_blank" rel="external">http://localhost:4000/，你将会看到：</a><br><img src="/2017/11/02/hello/16.png" alt="图片"><br>HEXO常用的几个命令：<br>（1）    hexo generate (hexo g)生成静态文件，会在当前目录下生成一个新的叫做public的文件夹<br>（2）    hexo server(hexo s)启动本地web服务，用于博客的预览<br>（3）    hexo deploy(hexo d)部署博客到远端（GitHub平台）<br>将HEXO与github联系起来：<br>大致分为两步：（1）配置git个人信息；（2）配置Deployment</p><p>Hexo不是处理命令时：<br>$ npm install hexo -g</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如何用HEXO+github搭建个人博客&lt;br&gt;HEXO是一个简单的、轻量的、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github上。原理：github存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的内容就是讲这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTTP报文格式解析</title>
+    <link href="http://yoursite.com/2017/11/02/HTTP/"/>
+    <id>http://yoursite.com/2017/11/02/HTTP/</id>
+    <published>2017-11-02T13:28:07.000Z</published>
+    <updated>2017-11-02T13:29:33.522Z</updated>
+    
+    <content type="html"><![CDATA[<p>HTTP报文格式解析<br>一．概述<br>HTTP报文是面向文本的，报文中的每一个字段都是ASCII码串，各个字段的长度是不确定的。HTTP有两类报文：请求报文和响应报文。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;HTTP报文格式解析&lt;br&gt;一．概述&lt;br&gt;HTTP报文是面向文本的，报文中的每一个字段都是ASCII码串，各个字段的长度是不确定的。HTTP有两类报文：请求报文和响应报文。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="HTTP协议" scheme="http://yoursite.com/tags/HTTP%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web</title>
+    <link href="http://yoursite.com/2017/09/29/web/"/>
+    <id>http://yoursite.com/2017/09/29/web/</id>
+    <published>2017-09-29T07:22:17.000Z</published>
+    <updated>2017-09-29T07:37:15.495Z</updated>
+    
+    <content type="html"><![CDATA[<p>cookie 和session 的区别详解:<br>1、cookie数据存放在客户的浏览器上，session数据放在服务器上。</p><p>2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗<br>   考虑到安全应当使用session。<br><a id="more"></a><br>3、session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能<br>   考虑到减轻服务器性能方面，应当使用COOKIE。</p><p>4、单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。</p><p>5、所以个人建议：<br>   将登陆信息等重要信息存放为SESSION<br>   其他信息如果需要保留，可以放在COOKIE中</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;cookie 和session 的区别详解:&lt;br&gt;1、cookie数据存放在客户的浏览器上，session数据放在服务器上。&lt;/p&gt;
+&lt;p&gt;2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗&lt;br&gt;   考虑到安全应当使用session。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer(3)</title>
+    <link href="http://yoursite.com/2017/09/15/offer/"/>
+    <id>http://yoursite.com/2017/09/15/offer/</id>
+    <published>2017-09-15T02:28:26.000Z</published>
+    <updated>2017-09-15T02:31:42.877Z</updated>
+    
+    <content type="html"><![CDATA[<p>题目：输入一个链表，从尾到头打印链表每个节点的值。<br><a id="more"></a><br>function printListFromTailToHead(head)<br>{<br>    var arr = [];<br>        while(head!=null){<br>        arr.push(head.val);<br>        head = head.next;<br>    }<br>    return arr.reverse();<br>}<br>思路：先将链表每个结点的值存入数组中，然后通过数组的reverse()方法，即可从尾到头打印。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题目：输入一个链表，从尾到头打印链表每个节点的值。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="链表" scheme="http://yoursite.com/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo生成博文插入图片</title>
+    <link href="http://yoursite.com/2017/09/11/hexo%E5%8D%9A%E6%96%87%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
+    <id>http://yoursite.com/2017/09/11/hexo博文插入图片/</id>
+    <published>2017-09-11T02:23:50.000Z</published>
+    <updated>2017-09-11T06:56:03.719Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2017/09/11/hexo博文插入图片/1.jpg" alt="图片"><br><a id="more"></a><br>1.把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true。<br>2.在你的hexo目录下执行这样一句话npm install hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件，来自dalao：dalao的git。<br>3.等待一小段时间后，再运行hexo n “xxxx”来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹。<br>4.最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：<img src="/2017/09/11/hexo博文插入图片/xxxx/图片名.jpg" alt="你想输入的替代文字">。<br>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。<br>5.最后检查一下，hexo g生成页面后，进入public\2017\02\26\index.html文件中查看相关字段，可以发现，html标签内的语句是<code>&lt;img src=&quot;2017/02/26/xxxx/图片名.jpg&quot;&gt;</code>，而不是<code>&lt;img src=&quot;xxxx/图片名.jpg&quot;&gt;</code>。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2017/09/11/hexo博文插入图片/1.jpg&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer(2):替换空格</title>
+    <link href="http://yoursite.com/2017/09/10/%E5%89%91%E6%8C%87offer(2)/"/>
+    <id>http://yoursite.com/2017/09/10/剑指offer(2)/</id>
+    <published>2017-09-10T12:36:37.000Z</published>
+    <updated>2017-09-11T07:02:11.910Z</updated>
+    
+    <content type="html"><![CDATA[<p>题目：请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。<br><a id="more"></a><br>function replaceSpace(str)<br>{<br>    return str.replace(/\s/g,’%20’);<br>}<br>思路：用正则表达式查找数字组中的所有空格，然后用str.replace替换。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;题目：请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer(1):二维数组中的查找</title>
+    <link href="http://yoursite.com/2017/09/10/%E5%89%91%E6%8C%87offer(1)/"/>
+    <id>http://yoursite.com/2017/09/10/剑指offer(1)/</id>
+    <published>2017-09-10T12:09:34.000Z</published>
+    <updated>2017-09-11T07:00:57.779Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2017/09/10/剑指offer(1)/1.jpg" alt=""><br>题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。<br><a id="more"></a><br>function Find(target, array)<br>{<br>    var row = array.length;    //行数<br>    var col = array[0].length;    //列数<br>    var r = row-1;    //从左下角开始比较<br>    var c = 0;<br>    while( r &gt;= 0 &amp;&amp; c &lt;= col-1){<br>        if(target &gt; array[r][c]){<br>            c++;<br>        }else if(target &lt; array[r][c]){<br>            r–;<br>        }else{<br>            return true;<br>        }<br>    }<br>    return false;<br>}<br>思路：因为矩阵的特殊性，所以先从最后一行第一列开始比较，小于则向上查找，大于则向后查找。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2017/09/10/剑指offer(1)/1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/06/14/hello-world/"/>
+    <id>http://yoursite.com/2017/06/14/hello-world/</id>
+    <published>2017-06-14T12:57:08.661Z</published>
+    <updated>2017-06-14T12:57:08.664Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
