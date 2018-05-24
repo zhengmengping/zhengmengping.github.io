@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[如何用HEXO+github搭建个人博客]]></title>
+    <url>%2F2017%2F11%2F02%2Fhello%2F</url>
+    <content type="text"><![CDATA[如何用HEXO+github搭建个人博客HEXO是一个简单的、轻量的、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github上。原理：github存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的内容就是讲这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。系统环境配置：要使用Hexo，需要在你的系统中支持Node.js以及Git。安装Node（必须），作用：用来生成静态页面，到Node.js官网下载和自己电脑相匹配的版本，除了指定安装路径，一路安装即可。安装Git（必须），作用：把本地的hexo内容提交到github上去，申请github账号，作用：是用来做博客的远成仓库、域名、服务器之类的。验证软件是否安装正确：同时按下win键或R键（或点击“开始菜单”&gt;点击“运行”），打开运行窗口，输入“cmd”，然后输入以下命令：显示版本信息，说明安装成功。申请gitub账号：注册完成后，点击“New repository”，新建一个版本库。输入repository name:yourname.github.io(yourname与你的注册用户名一致，这就是你博客的域名了)。到此，github账号申请完成。安装hexo：在自己认为合适的地方创建一个文件夹，这里以E：/hexo为例，首先在E盘目录下创建HEXO文件夹，并在命令行的窗口进入到该目录下在命令行中输入：可能会看到一个WARN，但是不用担心，不会影响正常使用，然后输入：等待进度条安装到100，然后测试hexo是否安装完成，输入：安装完成。HEXO的相关配置：1.初始化HEXO，接着上面的操作，输入：再输入：之后npm将会自动安装你需要的组件，只需等待npm操作即可。2.首次体验HEXO继续操作，同样在命令行输入：然后输入：提示：在浏览器中打开http://localhost:4000/，你将会看到：HEXO常用的几个命令：（1） hexo generate (hexo g)生成静态文件，会在当前目录下生成一个新的叫做public的文件夹（2） hexo server(hexo s)启动本地web服务，用于博客的预览（3） hexo deploy(hexo d)部署博客到远端（GitHub平台）将HEXO与github联系起来：大致分为两步：（1）配置git个人信息；（2）配置Deployment Hexo不是处理命令时：$ npm install hexo -g]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HTTP报文格式解析]]></title>
+    <url>%2F2017%2F11%2F02%2FHTTP%2F</url>
+    <content type="text"><![CDATA[HTTP报文格式解析一．概述HTTP报文是面向文本的，报文中的每一个字段都是ASCII码串，各个字段的长度是不确定的。HTTP有两类报文：请求报文和响应报文。]]></content>
+      <tags>
+        <tag>HTTP协议</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[web]]></title>
+    <url>%2F2017%2F09%2F29%2Fweb%2F</url>
+    <content type="text"><![CDATA[cookie 和session 的区别详解:1、cookie数据存放在客户的浏览器上，session数据放在服务器上。 2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗 考虑到安全应当使用session。3、session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能 考虑到减轻服务器性能方面，应当使用COOKIE。 4、单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。 5、所以个人建议： 将登陆信息等重要信息存放为SESSION 其他信息如果需要保留，可以放在COOKIE中]]></content>
+      <tags>
+        <tag>web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer(3)]]></title>
+    <url>%2F2017%2F09%2F15%2Foffer%2F</url>
+    <content type="text"><![CDATA[题目：输入一个链表，从尾到头打印链表每个节点的值。function printListFromTailToHead(head){ var arr = []; while(head!=null){ arr.push(head.val); head = head.next; } return arr.reverse();}思路：先将链表每个结点的值存入数组中，然后通过数组的reverse()方法，即可从尾到头打印。]]></content>
+      <tags>
+        <tag>javascript</tag>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo生成博文插入图片]]></title>
+    <url>%2F2017%2F09%2F11%2Fhexo%E5%8D%9A%E6%96%87%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%2F</url>
+    <content type="text"><![CDATA[1.把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true。2.在你的hexo目录下执行这样一句话npm install hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件，来自dalao：dalao的git。3.等待一小段时间后，再运行hexo n “xxxx”来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹。4.最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：。注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。5.最后检查一下，hexo g生成页面后，进入public\2017\02\26\index.html文件中查看相关字段，可以发现，html标签内的语句是&lt;img src=&quot;2017/02/26/xxxx/图片名.jpg&quot;&gt;，而不是&lt;img src=&quot;xxxx/图片名.jpg&quot;&gt;。这很重要，关乎你的网页是否可以真正加载你想插入的图片。]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer(2):替换空格]]></title>
+    <url>%2F2017%2F09%2F10%2F%E5%89%91%E6%8C%87offer(2)%2F</url>
+    <content type="text"><![CDATA[题目：请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。function replaceSpace(str){ return str.replace(/\s/g,’%20’);}思路：用正则表达式查找数字组中的所有空格，然后用str.replace替换。]]></content>
+      <tags>
+        <tag>javascript</tag>
+        <tag>数组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[剑指offer(1):二维数组中的查找]]></title>
+    <url>%2F2017%2F09%2F10%2F%E5%89%91%E6%8C%87offer(1)%2F</url>
+    <content type="text"><![CDATA[题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。function Find(target, array){ var row = array.length; //行数 var col = array[0].length; //列数 var r = row-1; //从左下角开始比较 var c = 0; while( r &gt;= 0 &amp;&amp; c &lt;= col-1){ if(target &gt; array[r][c]){ c++; }else if(target &lt; array[r][c]){ r–; }else{ return true; } } return false;}思路：因为矩阵的特殊性，所以先从最后一行第一列开始比较，小于则向上查找，大于则向后查找。]]></content>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F06%2F14%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
