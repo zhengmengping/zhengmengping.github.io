@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-04T13:11:44.319Z</updated>
+  <updated>2018-06-04T13:16:23.517Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,16 @@
     <link href="http://yoursite.com/2018/06/04/cookie/cookie/"/>
     <id>http://yoursite.com/2018/06/04/cookie/cookie/</id>
     <published>2018-06-04T12:49:05.000Z</published>
-    <updated>2018-06-04T13:11:44.319Z</updated>
+    <updated>2018-06-04T13:16:23.517Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://image.baidu.com/search/detail?ct=503316480&amp;z=0&amp;ipn=d&amp;word=%E4%B8%80%E5%BC%A0%E5%9B%BE%E8%AF%81%E6%98%8E%E9%9D%92%E6%98%A5%E6%9C%89%E5%A4%9A%E6%8B%BC&amp;step_word=&amp;hs=0&amp;pn=6&amp;spn=0&amp;di=105393942500&amp;pi=0&amp;rn=1&amp;tn=baiduimagedetail&amp;is=0%2C0&amp;istype=0&amp;ie=utf-8&amp;oe=utf-8&amp;in=&amp;cl=2&amp;lm=-1&amp;st=undefined&amp;cs=2083397208%2C2203445233&amp;os=81908367%2C2635779175&amp;simid=0%2C0&amp;adpicid=0&amp;lpn=0&amp;ln=1983&amp;fr=&amp;fmq=1528117824017_R&amp;fm=&amp;ic=undefined&amp;s=undefined&amp;se=&amp;sme=&amp;tab=0&amp;width=undefined&amp;height=undefined&amp;face=undefined&amp;ist=&amp;jit=&amp;cg=&amp;bdtype=0&amp;oriquery=&amp;objurl=http%3A%2F%2Fimg.lookmw.cn%2F170621%2F1497447442.jpg&amp;fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bs55h4o_z%26e3BvgAzdH3FstzitAzdH3Fkxwhggt_z%26e3Bip4s&amp;gsm=0&amp;rpstart=0&amp;rpnum=0&amp;islist=&amp;querylist=" alt="图片"><br><a id="more"></a></p><h1 id="阿里一面"><a href="#阿里一面" class="headerlink" title=" 阿里一面 "></a><strong> 阿里一面 </strong></h1><ol><li>自我介绍一下</li><li>DOCTYPE是什么，有几种模式，分别阐述一下</li><li>CSS盒模型在W3C下和IE下有什么不同<!--more--></li><li>有一堆2分、3分、5分的硬币，要凑成一块钱，有几种组合，用代码实现一下</li><li>一个ul下面有很多li，把这些li倒过来放置（包括里面的内容），用DOM操作实现一下</li><li>一个li绑定了一个事件，然后把这个li删除了，问这个事件还存在么，为什么</li><li>为什么想从事前端开发</li></ol><h1 id="阿里二面"><a href="#阿里二面" class="headerlink" title=" 阿里二面 "></a><strong> 阿里二面 </strong></h1><ol><li>自我介绍，说了有发明专利公开，先讲一下发明专利的东西</li><li>箭头函数(作用域)</li><li>数组常用的API</li><li>事件传播过程（事件冒泡和事件捕获）</li><li>addEventListener有几个参数，第三个参数什么意思</li><li>setTimeout有几个参数，如果第二个参数设置为0，会立即执行么（单线程）</li><li>前序遍历不用递归写，先用栈写，再用队列写</li><li>看了哪些前端开方方面的书</li><li>最快的排序是哪种，快排的实现原理，罗列出所有时间复杂度nlogn的排序算法</li><li>在搭建个人博客中遇到的问题</li></ol><h1 id="阿里三面"><a href="#阿里三面" class="headerlink" title=" 阿里三面 "></a><strong> 阿里三面 </strong></h1><ol><li>用三句简短的话介绍下自己</li><li>阐述一下专利的内容以及应用场景</li><li>为什么想从事前端开发</li><li>最近在干什么（搭博客）</li><li>有没有自己的代码沉淀？？？？</li><li>项目中遇到哪些问题怎么解决的</li><li>Github中有没有可以展示的作品</li><li>讲一下最近一篇博客写了什么</li><li>笔试中一道编程题实现一下（CSS选择器）</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="阿里一面"><a href="#阿里一面" class="headerlink" title=" 阿里一面 "></a><strong> 阿里一面 </strong></h1><ol><li>自我介绍一下</li><li>DOCTYPE是什么，有几种模式，分别阐述一下</li><li>CSS盒模型在W3C下和IE下有什么不同<a id="more"></a></li><li>有一堆2分、3分、5分的硬币，要凑成一块钱，有几种组合，用代码实现一下</li><li>一个ul下面有很多li，把这些li倒过来放置（包括里面的内容），用DOM操作实现一下</li><li>一个li绑定了一个事件，然后把这个li删除了，问这个事件还存在么，为什么</li><li>为什么想从事前端开发</li></ol><h1 id="阿里二面"><a href="#阿里二面" class="headerlink" title=" 阿里二面 "></a><strong> 阿里二面 </strong></h1><ol><li>自我介绍，说了有发明专利公开，先讲一下发明专利的东西</li><li>箭头函数(作用域)</li><li>数组常用的API</li><li>事件传播过程（事件冒泡和事件捕获）</li><li>addEventListener有几个参数，第三个参数什么意思</li><li>setTimeout有几个参数，如果第二个参数设置为0，会立即执行么（单线程）</li><li>前序遍历不用递归写，先用栈写，再用队列写</li><li>看了哪些前端开方方面的书</li><li>最快的排序是哪种，快排的实现原理，罗列出所有时间复杂度nlogn的排序算法</li><li>在搭建个人博客中遇到的问题</li></ol><h1 id="阿里三面"><a href="#阿里三面" class="headerlink" title=" 阿里三面 "></a><strong> 阿里三面 </strong></h1><ol><li>用三句简短的话介绍下自己</li><li>阐述一下专利的内容以及应用场景</li><li>为什么想从事前端开发</li><li>最近在干什么（搭博客）</li><li>有没有自己的代码沉淀？？？？</li><li>项目中遇到哪些问题怎么解决的</li><li>Github中有没有可以展示的作品</li><li>讲一下最近一篇博客写了什么</li><li>笔试中一道编程题实现一下（CSS选择器）</li></ol><p><img src="http://i2.sinaimg.cn/jc/2014-10-15/1413318133_bIiEF5.jpg" alt="图片描述"></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://image.baidu.com/search/detail?ct=503316480&amp;amp;z=0&amp;amp;ipn=d&amp;amp;word=%E4%B8%80%E5%BC%A0%E5%9B%BE%E8%AF%81%E6%98%8E%E9%9D%92%E6%98%A5%E6%9C%89%E5%A4%9A%E6%8B%BC&amp;amp;step_word=&amp;amp;hs=0&amp;amp;pn=6&amp;amp;spn=0&amp;amp;di=105393942500&amp;amp;pi=0&amp;amp;rn=1&amp;amp;tn=baiduimagedetail&amp;amp;is=0%2C0&amp;amp;istype=0&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;in=&amp;amp;cl=2&amp;amp;lm=-1&amp;amp;st=undefined&amp;amp;cs=2083397208%2C2203445233&amp;amp;os=81908367%2C2635779175&amp;amp;simid=0%2C0&amp;amp;adpicid=0&amp;amp;lpn=0&amp;amp;ln=1983&amp;amp;fr=&amp;amp;fmq=1528117824017_R&amp;amp;fm=&amp;amp;ic=undefined&amp;amp;s=undefined&amp;amp;se=&amp;amp;sme=&amp;amp;tab=0&amp;amp;width=undefined&amp;amp;height=undefined&amp;amp;face=undefined&amp;amp;ist=&amp;amp;jit=&amp;amp;cg=&amp;amp;bdtype=0&amp;amp;oriquery=&amp;amp;objurl=http%3A%2F%2Fimg.lookmw.cn%2F170621%2F1497447442.jpg&amp;amp;fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bs55h4o_z%26e3BvgAzdH3FstzitAzdH3Fkxwhggt_z%26e3Bip4s&amp;amp;gsm=0&amp;amp;rpstart=0&amp;amp;rpnum=0&amp;amp;islist=&amp;amp;querylist=&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;阿里一面&quot;&gt;&lt;a href=&quot;#阿里一面&quot; class=&quot;headerlink&quot; title=&quot; 阿里一面 &quot;&gt;&lt;/a&gt;&lt;strong&gt; 阿里一面 &lt;/strong&gt;&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;自我介绍一下&lt;/li&gt;
+&lt;li&gt;DOCTYPE是什么，有几种模式，分别阐述一下&lt;/li&gt;
+&lt;li&gt;CSS盒模型在W3C下和IE下有什么不同&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
