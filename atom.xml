@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-02T14:00:50.242Z</updated>
+  <updated>2018-06-04T12:55:12.415Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里前端开发实习生面经</title>
+    <link href="http://yoursite.com/2018/06/04/cookie/cookie/"/>
+    <id>http://yoursite.com/2018/06/04/cookie/cookie/</id>
+    <published>2018-06-04T12:49:05.000Z</published>
+    <updated>2018-06-04T12:55:12.415Z</updated>
+    
+    <content type="html"><![CDATA[<p>#阿里一面</p><ol><li>自我介绍一下</li><li>DOCTYPE是什么，有几种模式，分别阐述一下</li><li>CSS盒模型在W3C下和IE下有什么不同</li><li>有一堆2分、3分、5分的硬币，要凑成一块钱，有几种组合，用代码实现一下</li><li>一个ul下面有很多li，把这些li倒过来放置（包括里面的内容），用DOM操作实现一下</li><li>一个li绑定了一个事件，然后把这个li删除了，问这个事件还存在么，为什么</li><li>为什么想从事前端开发</li></ol><p>#阿里二面</p><ol><li>自我介绍，说了有发明专利公开，先讲一下发明专利的东西</li><li>箭头函数(作用域)</li><li>数组常用的API</li><li>事件传播过程（事件冒泡和事件捕获）</li><li>addEventListener有几个参数，第三个参数什么意思</li><li>setTimeout有几个参数，如果第二个参数设置为0，会立即执行么（单线程）</li><li>前序遍历不用递归写，先用栈写，再用队列写</li><li>看了哪些前端开方方面的书</li><li>最快的排序是哪种，快排的实现原理，罗列出所有时间复杂度nlogn的排序算法</li><li>在搭建个人博客中遇到的问题</li></ol><p>#阿里三面</p><ol><li>用三句简短的话介绍下自己</li><li>阐述一下专利的内容以及应用场景</li><li>为什么想从事前端开发</li><li>最近在干什么（搭博客）</li><li>有没有自己的代码沉淀？？？？</li><li>项目中遇到哪些问题怎么解决的</li><li>Github中有没有可以展示的作品</li><li>讲一下最近一篇博客写了什么</li><li>笔试中一道编程题实现一下（CSS选择器）</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#阿里一面&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;自我介绍一下&lt;/li&gt;
+&lt;li&gt;DOCTYPE是什么，有几种模式，分别阐述一下&lt;/li&gt;
+&lt;li&gt;CSS盒模型在W3C下和IE下有什么不同&lt;/li&gt;
+&lt;li&gt;有一堆2分、3分、5分的硬币，要凑成一块钱，有几种组合，用代码实现一下&lt;/li
+      
+    
+    </summary>
+    
+      <category term="面经" scheme="http://yoursite.com/categories/%E9%9D%A2%E7%BB%8F/"/>
+    
+    
+      <category term="面经" scheme="http://yoursite.com/tags/%E9%9D%A2%E7%BB%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>如何用HEXO+github搭建个人博客</title>
@@ -40,8 +70,8 @@
   
   <entry>
     <title>HTTP报文格式解析</title>
-    <link href="http://yoursite.com/2017/11/02/HTTP/"/>
-    <id>http://yoursite.com/2017/11/02/HTTP/</id>
+    <link href="http://yoursite.com/2017/11/02/HTTP/HTTP/"/>
+    <id>http://yoursite.com/2017/11/02/HTTP/HTTP/</id>
     <published>2017-11-02T13:28:07.000Z</published>
     <updated>2017-11-02T13:29:33.522Z</updated>
     

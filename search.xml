@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[阿里前端开发实习生面经]]></title>
+    <url>%2F2018%2F06%2F04%2Fcookie%2Fcookie%2F</url>
+    <content type="text"><![CDATA[#阿里一面 自我介绍一下 DOCTYPE是什么，有几种模式，分别阐述一下 CSS盒模型在W3C下和IE下有什么不同 有一堆2分、3分、5分的硬币，要凑成一块钱，有几种组合，用代码实现一下 一个ul下面有很多li，把这些li倒过来放置（包括里面的内容），用DOM操作实现一下 一个li绑定了一个事件，然后把这个li删除了，问这个事件还存在么，为什么 为什么想从事前端开发 #阿里二面 自我介绍，说了有发明专利公开，先讲一下发明专利的东西 箭头函数(作用域) 数组常用的API 事件传播过程（事件冒泡和事件捕获） addEventListener有几个参数，第三个参数什么意思 setTimeout有几个参数，如果第二个参数设置为0，会立即执行么（单线程） 前序遍历不用递归写，先用栈写，再用队列写 看了哪些前端开方方面的书 最快的排序是哪种，快排的实现原理，罗列出所有时间复杂度nlogn的排序算法 在搭建个人博客中遇到的问题 #阿里三面 用三句简短的话介绍下自己 阐述一下专利的内容以及应用场景 为什么想从事前端开发 最近在干什么（搭博客） 有没有自己的代码沉淀？？？？ 项目中遇到哪些问题怎么解决的 Github中有没有可以展示的作品 讲一下最近一篇博客写了什么 笔试中一道编程题实现一下（CSS选择器）]]></content>
+      <categories>
+        <category>面经</category>
+      </categories>
+      <tags>
+        <tag>面经</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何用HEXO+github搭建个人博客]]></title>
     <url>%2F2017%2F11%2F02%2Fhello%2F</url>
     <content type="text"><![CDATA[如何用HEXO+github搭建个人博客HEXO是一个简单的、轻量的、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github上。原理：github存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的内容就是讲这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。系统环境配置：要使用Hexo，需要在你的系统中支持Node.js以及Git。安装Node（必须），作用：用来生成静态页面，到Node.js官网下载和自己电脑相匹配的版本，除了指定安装路径，一路安装即可。安装Git（必须），作用：把本地的hexo内容提交到github上去，申请github账号，作用：是用来做博客的远成仓库、域名、服务器之类的。验证软件是否安装正确：同时按下win键或R键（或点击“开始菜单”&gt;点击“运行”），打开运行窗口，输入“cmd”，然后输入以下命令：显示版本信息，说明安装成功。申请gitub账号：注册完成后，点击“New repository”，新建一个版本库。输入repository name:yourname.github.io(yourname与你的注册用户名一致，这就是你博客的域名了)。到此，github账号申请完成。安装hexo：在自己认为合适的地方创建一个文件夹，这里以E：/hexo为例，首先在E盘目录下创建HEXO文件夹，并在命令行的窗口进入到该目录下在命令行中输入：可能会看到一个WARN，但是不用担心，不会影响正常使用，然后输入：等待进度条安装到100，然后测试hexo是否安装完成，输入：安装完成。HEXO的相关配置：1.初始化HEXO，接着上面的操作，输入：再输入：之后npm将会自动安装你需要的组件，只需等待npm操作即可。2.首次体验HEXO继续操作，同样在命令行输入：然后输入：提示：在浏览器中打开http://localhost:4000/，你将会看到：HEXO常用的几个命令：（1） hexo generate (hexo g)生成静态文件，会在当前目录下生成一个新的叫做public的文件夹（2） hexo server(hexo s)启动本地web服务，用于博客的预览（3） hexo deploy(hexo d)部署博客到远端（GitHub平台）将HEXO与github联系起来：大致分为两步：（1）配置git个人信息；（2）配置Deployment Hexo不是处理命令时：$ npm install hexo -g]]></content>
@@ -11,7 +22,7 @@
   </entry>
   <entry>
     <title><![CDATA[HTTP报文格式解析]]></title>
-    <url>%2F2017%2F11%2F02%2FHTTP%2F</url>
+    <url>%2F2017%2F11%2F02%2FHTTP%2FHTTP%2F</url>
     <content type="text"><![CDATA[HTTP报文格式解析一．概述HTTP报文是面向文本的，报文中的每一个字段都是ASCII码串，各个字段的长度是不确定的。HTTP有两类报文：请求报文和响应报文。]]></content>
       <tags>
         <tag>HTTP协议</tag>
