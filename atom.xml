@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-05T01:36:40.791Z</updated>
+  <updated>2018-06-05T11:52:28.442Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>海康前端开发实习面经</title>
+    <link href="http://yoursite.com/2018/06/05/%E6%B5%B7%E5%BA%B7%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F/%E6%B5%B7%E5%BA%B7%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F/"/>
+    <id>http://yoursite.com/2018/06/05/海康前端开发实习面经/海康前端开发实习面经/</id>
+    <published>2018-06-05T11:47:13.000Z</published>
+    <updated>2018-06-05T11:52:28.442Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1528209564870&amp;di=0741ec0089045917c289626d106ba13f&amp;imgtype=0&amp;src=http%3A%2F%2Fs1.sinaimg.cn%2Fmiddle%2F7ef79a82na9b84a318790%26690" alt="图片描述"></p><a id="more"></a><hr><ol><li>自我介绍</li><li>Ajax相关知识</li><li>数据库增删改查</li><li>如何获取元素（DOM操作）</li><li>盒模型</li><li>存储cookie、sessionStorage、localStorage</li><li>常用的http状态码</li><li>常用的http请求方式</li><li>GET和POST区别</li><li>闭包、作用域</li><li>事件冒泡、事件捕获</li><li>布局，div+css</li><li>框架vue组件相互通信、jquery、bootStrap</li><li>对后端有了解么</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://timgsa.baidu.com/timg?image&amp;amp;quality=80&amp;amp;size=b9999_10000&amp;amp;sec=1528209564870&amp;amp;di=0741ec0089045917c289626d106ba13f&amp;amp;imgtype=0&amp;amp;src=http%3A%2F%2Fs1.sinaimg.cn%2Fmiddle%2F7ef79a82na9b84a318790%26690&quot; alt=&quot;图片描述&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="面经" scheme="http://yoursite.com/tags/%E9%9D%A2%E7%BB%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里前端开发实习生面经</title>
