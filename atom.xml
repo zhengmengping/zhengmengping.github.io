@@ -194,7 +194,7 @@
     <link href="http://yoursite.com/2017/09/10/offer/%E5%89%91%E6%8C%87offer(1)/"/>
     <id>http://yoursite.com/2017/09/10/offer/剑指offer(1)/</id>
     <published>2017-09-10T12:09:34.000Z</published>
-    <updated>2017-09-11T07:00:57.779Z</updated>
+    <updated>2018-06-07T09:12:34.431Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/2017/09/10/offer/剑指offer(1)/1.jpg" alt=""><br>题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。<br><a id="more"></a><br>function Find(target, array)<br>{<br>    var row = array.length;    //行数<br>    var col = array[0].length;    //列数<br>    var r = row-1;    //从左下角开始比较<br>    var c = 0;<br>    while( r &gt;= 0 &amp;&amp; c &lt;= col-1){<br>        if(target &gt; array[r][c]){<br>            c++;<br>        }else if(target &lt; array[r][c]){<br>            r–;<br>        }else{<br>            return true;<br>        }<br>    }<br>    return false;<br>}<br>思路：因为矩阵的特殊性，所以先从最后一行第一列开始比较，小于则向上查找，大于则向后查找。</p>]]></content>
     
@@ -203,6 +203,8 @@
       &lt;p&gt;&lt;img src=&quot;/2017/09/10/offer/剑指offer(1)/1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。&lt;br&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="剑指offer" scheme="http://yoursite.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
       <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>

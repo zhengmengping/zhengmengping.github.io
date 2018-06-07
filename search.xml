@@ -74,6 +74,9 @@
     <title><![CDATA[剑指offer(1):二维数组中的查找]]></title>
     <url>%2F2017%2F09%2F10%2Foffer%2F%E5%89%91%E6%8C%87offer(1)%2F</url>
     <content type="text"><![CDATA[题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。function Find(target, array){ var row = array.length; //行数 var col = array[0].length; //列数 var r = row-1; //从左下角开始比较 var c = 0; while( r &gt;= 0 &amp;&amp; c &lt;= col-1){ if(target &gt; array[r][c]){ c++; }else if(target &lt; array[r][c]){ r–; }else{ return true; } } return false;}思路：因为矩阵的特殊性，所以先从最后一行第一列开始比较，小于则向上查找，大于则向后查找。]]></content>
+      <categories>
+        <category>剑指offer</category>
+      </categories>
       <tags>
         <tag>javascript</tag>
       </tags>
