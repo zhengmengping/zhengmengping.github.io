@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-07T06:53:51.910Z</updated>
+  <updated>2018-06-07T09:19:43.982Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/06/05/%E6%B5%B7%E5%BA%B7%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F/%E6%B5%B7%E5%BA%B7%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F/"/>
     <id>http://yoursite.com/2018/06/05/海康前端开发实习面经/海康前端开发实习面经/</id>
     <published>2018-06-05T11:47:13.000Z</published>
-    <updated>2018-06-07T06:53:51.910Z</updated>
+    <updated>2018-06-07T09:19:43.982Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1528364469223&amp;di=fa8284b14397dde0b759e62c11b7fdf0&amp;imgtype=0&amp;src=http%3A%2F%2Fbpic.ooopic.com%2F16%2F06%2F82%2F16068220-f011534649bab9b75a687a80d3aa2d1f-0.jpg" alt="图片描述"></p><a id="more"></a><hr><ol><li>自我介绍</li><li>Ajax相关知识</li><li>数据库增删改查</li><li>如何获取元素（DOM操作）</li><li>盒模型</li><li>存储cookie、sessionStorage、localStorage</li><li>常用的http状态码</li><li>常用的http请求方式</li><li>GET和POST区别</li><li>闭包、作用域</li><li>事件冒泡、事件捕获</li><li>布局，div+css</li><li>框架vue组件相互通信、jquery、bootStrap</li><li>对后端有了解么</li></ol>]]></content>
     
@@ -30,6 +30,8 @@
       &lt;p&gt;&lt;img src=&quot;https://timgsa.baidu.com/timg?image&amp;amp;quality=80&amp;amp;size=b9999_10000&amp;amp;sec=1528364469223&amp;amp;di=fa8284b14397dde0b759e62c11b7fdf0&amp;amp;imgtype=0&amp;amp;src=http%3A%2F%2Fbpic.ooopic.com%2F16%2F06%2F82%2F16068220-f011534649bab9b75a687a80d3aa2d1f-0.jpg&quot; alt=&quot;图片描述&quot;&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="面经" scheme="http://yoursite.com/categories/%E9%9D%A2%E7%BB%8F/"/>
     
     
       <category term="面经" scheme="http://yoursite.com/tags/%E9%9D%A2%E7%BB%8F/"/>
@@ -85,7 +87,7 @@
     <link href="http://yoursite.com/2017/11/02/HTTP/HTTP/"/>
     <id>http://yoursite.com/2017/11/02/HTTP/HTTP/</id>
     <published>2017-11-02T13:28:07.000Z</published>
-    <updated>2017-11-02T13:29:33.522Z</updated>
+    <updated>2018-06-07T09:19:14.182Z</updated>
     
     <content type="html"><![CDATA[<p>HTTP报文格式解析<br>一．概述<br>HTTP报文是面向文本的，报文中的每一个字段都是ASCII码串，各个字段的长度是不确定的。HTTP有两类报文：请求报文和响应报文。</p>]]></content>
     
@@ -99,17 +101,19 @@
     
     </summary>
     
+      <category term="HTTP" scheme="http://yoursite.com/categories/HTTP/"/>
+    
     
       <category term="HTTP协议" scheme="http://yoursite.com/tags/HTTP%E5%8D%8F%E8%AE%AE/"/>
     
   </entry>
   
   <entry>
-    <title>web</title>
-    <link href="http://yoursite.com/2017/09/29/web/web/"/>
-    <id>http://yoursite.com/2017/09/29/web/web/</id>
+    <title>cookie、sessionStorage区别</title>
+    <link href="http://yoursite.com/2017/09/29/cookie%E3%80%81sessionStorage%E5%8C%BA%E5%88%AB/cookie%E3%80%81sessionStorage%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2017/09/29/cookie、sessionStorage区别/cookie、sessionStorage区别/</id>
     <published>2017-09-29T07:22:17.000Z</published>
-    <updated>2017-09-29T07:37:15.495Z</updated>
+    <updated>2018-06-07T09:22:01.596Z</updated>
     
     <content type="html"><![CDATA[<p>cookie 和session 的区别详解:<br>1、cookie数据存放在客户的浏览器上，session数据放在服务器上。</p><p>2、cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗<br>   考虑到安全应当使用session。<br><a id="more"></a><br>3、session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能<br>   考虑到减轻服务器性能方面，应当使用COOKIE。</p><p>4、单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。</p><p>5、所以个人建议：<br>   将登陆信息等重要信息存放为SESSION<br>   其他信息如果需要保留，可以放在COOKIE中</p>]]></content>
     
@@ -120,8 +124,10 @@
     
     </summary>
     
+      <category term="存储" scheme="http://yoursite.com/categories/%E5%AD%98%E5%82%A8/"/>
     
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+    
+      <category term="存储" scheme="http://yoursite.com/tags/%E5%AD%98%E5%82%A8/"/>
     
   </entry>
   
@@ -130,7 +136,7 @@
     <link href="http://yoursite.com/2017/09/15/offer/offer/"/>
     <id>http://yoursite.com/2017/09/15/offer/offer/</id>
     <published>2017-09-15T02:28:26.000Z</published>
-    <updated>2017-09-15T02:31:42.877Z</updated>
+    <updated>2018-06-07T09:19:00.366Z</updated>
     
     <content type="html"><![CDATA[<p>题目：输入一个链表，从尾到头打印链表每个节点的值。<br><a id="more"></a><br>function printListFromTailToHead(head)<br>{<br>    var arr = [];<br>        while(head!=null){<br>        arr.push(head.val);<br>        head = head.next;<br>    }<br>    return arr.reverse();<br>}<br>思路：先将链表每个结点的值存入数组中，然后通过数组的reverse()方法，即可从尾到头打印。</p>]]></content>
     
@@ -139,6 +145,8 @@
       &lt;p&gt;题目：输入一个链表，从尾到头打印链表每个节点的值。&lt;br&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="剑指offer" scheme="http://yoursite.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
       <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
@@ -172,7 +180,7 @@
     <link href="http://yoursite.com/2017/09/10/offer/%E5%89%91%E6%8C%87offer(2)/"/>
     <id>http://yoursite.com/2017/09/10/offer/剑指offer(2)/</id>
     <published>2017-09-10T12:36:37.000Z</published>
-    <updated>2017-09-11T07:02:11.910Z</updated>
+    <updated>2018-06-07T09:18:35.877Z</updated>
     
     <content type="html"><![CDATA[<p>题目：请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。<br><a id="more"></a><br>function replaceSpace(str)<br>{<br>    return str.replace(/\s/g,’%20’);<br>}<br>思路：用正则表达式查找数字组中的所有空格，然后用str.replace替换。</p>]]></content>
     
@@ -181,6 +189,8 @@
       &lt;p&gt;题目：请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。&lt;br&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="剑指offer" scheme="http://yoursite.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
       <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
