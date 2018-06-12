@@ -1522,7 +1522,7 @@ pre .javascript .function {
 }
 .sidebar {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
   width: 0;
@@ -1789,7 +1789,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4ac26c;
+  background: #7affaf;
 }
 .links-of-blogroll {
   font-size: 13px;
