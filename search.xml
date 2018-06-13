@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[路由基础]]></title>
+    <url>%2F2018%2F06%2F13%2F%E8%B7%AF%E7%94%B1%E5%9F%BA%E7%A1%80%2F%E8%B7%AF%E7%94%B1%E5%9F%BA%E7%A1%80%2F</url>
+    <content type="text"><![CDATA[什么是前端路由？ 路由是根据不同url地址展示不同的内容或者页面 前端路由就是把不同路由对应不同的内容或页面的任务交给前端来做，之前是通过服务端根据url的不同返回不同的页面实现的 什么时候使用前端路由？在单页面应用，大部分页面结构不变，只改变部分内容时使用 前端路由有什么优缺点？优点 用户体验好，不需要每次都从服务器全部获取。快速展现给用户 缺点 不利于seo； 使用浏览器的前进、后退键的时候会重新发送请求，没有合理的利用缓存； 单页面无法记住之前滚动的位置，无法在前进、后退的时候记住滚动的位置。 vue-router是用来构建SPA的关键 &lt;router-link&gt;&lt;/router-link&gt;或者this.$router.push({path:&quot;}) (本质就是a标签，实现跳转) &lt;router-view&gt;&lt;/router-view&gt; (实现渲染) 什么是命名路由和命名视图？ 给路由定义不同的名字，根据名字进行匹配 给不同的router-view定义名字，通过名字进行对应组件的渲染]]></content>
+      <categories>
+        <category>Vue</category>
+        <category>路由</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>路由</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何把本地项目上传至github仓库]]></title>
     <url>%2F2018%2F06%2F11%2F%E5%A6%82%E4%BD%95%E6%8A%8A%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E8%87%B3github%E4%BB%93%E5%BA%93%2F%E5%A6%82%E4%BD%95%E6%8A%8A%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E8%87%B3github%E4%BB%93%E5%BA%93%2F</url>
     <content type="text"><![CDATA[将本地项目上传至github仓库需要以下几个步骤： 在本地创建一个版本库（即文件夹），通过git init把它变成git仓库； 把项目复制到这个文件夹中，再通过git add .把项目添加到暂存区； 再通过git commit -m &quot;注释内容&quot;把项目提交到仓库； 新建一个远程仓库，通过git remote add origin &quot;仓库地址&quot;将本地仓库和远程仓库进行关联； 最后通过git push -u origin master(新建的远程仓库是空的，所以要加上-u这个参数，等远程仓库里面有了内容之后，下次再次从本地仓库上传内容的时候只需要这样git push origin master即可)把本地仓库的项目推送到远程仓库（也就是github）上。 注：若新建远程仓库的时候自动创建了README文件(如果你勾选了Initialize this repository with a README创建仓库的时候会自动给你创建一个README文件)会报错failed to push some refs to https://github.com/guyibang/TEST2.git，解决方法：git pull --rebase origin master。]]></content>
