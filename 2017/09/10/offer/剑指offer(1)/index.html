@@ -864,68 +864,22 @@
 
 
 
-  
-    
-      <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
-      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-      <script>
-        //去除尾部匹配正则数组的字符串  
-        String.prototype.trimEnd = function(regStr)  
-        {  
-            var result = this;
-            if(regStr==undefined||regStr==null||regStr=="")  
-            {    
-                return result;
-            }
-            var array = regStr.split(',');
-
-            if(array.length > 0){
-                 
-                var c = array.shift();
-                var str= this;
-                var i = str.length;  
-                var rg = new RegExp(c);
-                var matchArr = str.match(rg);
-
-                if(matchArr != undefined && matchArr != null && matchArr.length > 0)
-                {
-                  var matchStr = matchArr[0].replace(/\\/g, "\\\\").replace(/\*/g, "\\*")
-                                            .replace(/\+/g, "\\+").replace(/\|/g, "\\|")
-                                            .replace(/\{/g, "\\{").replace(/\}/g, "\\}")
-                                            .replace(/\(/g, "\\(").replace(/\)/g, "\\)")
-                                            .replace(/\^/g, "\\^").replace(/\$/g, "\\$")
-                                            .replace(/\[/g, "\\[").replace(/\]/g, "\\]")
-                                            .replace(/\?/g, "\\?").replace(/\,/g, "\\,")
-                                            .replace(/\./g, "\\.").replace(/\&/g, "\\&");
-                  matchStr = matchStr + '$';
-                  result = str.replace(new RegExp(matchStr), "");
-                }
-                
-                if(array.length > 0){
-                    return result.trimEnd(array.join())
-                }
-                else{
-                    return result; 
-                } 
-            } 
-        };
-      </script>
-      <script type="text/javascript">
-        const gitalk = new Gitalk({
-          clientID: '',
-          clientSecret: '',
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src = "/js/src/md5.min.js"></script>
+   <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '8d8b607014578ba8740d',
+          clientSecret: '4445328411b03e599d47842123982d2e0df0b353',
           repo: 'zhengmengping.github.io',
-          owner: '',
-          admin: ''.split(','),
-          pagerDirection: '',
-          // facebook-like distraction free mode
-          distractionFreeMode: false,
-          id: md5(location.href.trimEnd(''))
+          owner: 'zhengmengping',
+          admin: ['zhengmengping'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
         })
-        gitalk.render('gitalk-container')
-      </script>
-    
-  
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
