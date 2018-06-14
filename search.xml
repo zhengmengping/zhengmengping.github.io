@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[AMD、CMD、CommonJS和ES6对比]]></title>
-    <url>%2F2018%2F06%2F14%2FAMD%E3%80%81CMD%E3%80%81CommonJS%E5%92%8CES6%E5%AF%B9%E6%AF%94%2FAMD%E3%80%81CMD%E3%80%81CommonJS%E5%92%8CES6%E5%AF%B9%E6%AF%94%2F</url>
+    <url>%2F2018%2F06%2F14%2F%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%2F%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%2F</url>
     <content type="text"><![CDATA[什么是AMD、CMD、CommonJS?它们之间有什么区别？项目当中都是如何运用的？AMDAMD：异步模块定义 AMD是RequireJS在推广过程中对模块定义的规范化产出 123456789define([&apos;package/lib&apos;],function(lib)&#123; function foo()&#123; lib.log(&apos;hello world&apos;); &#125; return &#123; foo: foo &#125;; &#125;); CMDCMD:同步模块定义 CMD是SeaJS在推广过程中对模块定义的规范化产出 123456//所有的模块都通过define来定义 define(function(require,exports,module))&#123; //通过reqiure引入依赖 var $ = require(&apos;jquery&apos;); var Spinning = require(&apos;./spinning&apos;); &#125;; CommonJSCommonJS:通过module.exports来定义的 在服务端一般通过CommonJS来定义模块化开发 123456exports.area = function(r)&#123; return Math.PI * r * r; &#125;; exports.circumference = function(r)&#123; return 2 * Math.PI * r; &#125;; ES6ES6通过export/import来定义输入输出 1234567891011121314151617export default&#123; props:[&quot;num&quot;], data()&#123; return&#123; &#125; &#125;, methods:&#123; increment()&#123; this.$emit(&quot;incre&quot;); import(&apos;./../util&apos;) &#125;, decrement()&#123; this.$emit(&quot;decre&quot;); &#125; &#125; &#125;]]></content>
       <categories>
         <category>模块化开发</category>
