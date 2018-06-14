@@ -876,11 +876,11 @@
           repo: 'zhengmengping.github.io',
           owner: 'zhengmengping',
           admin: ['zhengmengping'],
-          id: location.pathname,
+          id: md5(location.pathname),
           distractionFreeMode: 'true'
         })
-        gitalk.render('gitalk-container')           
-       </script>
+        gitalk.render('gitalk-container')
+    </script>
 
   
 
