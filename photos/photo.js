@@ -16,11 +16,11 @@ photo ={
         for (var i = begin; i < end && i < data.length; i++) {
            imgNameWithPattern = data[i].split(' ')[1];
            imgName = imgNameWithPattern.split('.')[0]
-           imageSize = (data[i].split(' ')[0])/2;
+           imageSize = data[i].split(' ')[0];
            imageX = imageSize.split('.')[0];
            imageY = imageSize.split('.')[1];
-            li += '<div class="card" style="width:330px">' +
-                    '<div class="ImageInCard" style="height:'+ 330 * imageY / imageX + 'px">' +
+            li += '<div class="card" style="width:300px">' +
+                    '<div class="ImageInCard" style="height:'+ 300 * imageY / imageX + 'px">' +
                       '<a data-fancybox="gallery" href="https://github.com/zhengmengping/blogPhotos/blob/master/Images/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
                         '<img src="https://github.com/zhengmengping/blogPhotos/blob/master/Images/' + imgNameWithPattern + '?raw=true"/>' +
                       '</a>' +
