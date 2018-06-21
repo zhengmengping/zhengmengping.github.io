@@ -19,8 +19,8 @@ photo ={
            imageSize = data[i].split(' ')[0];
            imageX = imageSize.split('.')[0];
            imageY = imageSize.split('.')[1];
-            li += '<div class="card" style="width:300px">' +
-                    '<div class="ImageInCard" style="height:'+ 300 * imageY / imageX + 'px">' +
+            li += '<div class="card" style="width:200px">' +
+                    '<div class="ImageInCard" style="height:'+ 200 * imageY / imageX + 'px">' +
                       '<a data-fancybox="gallery" href="https://github.com/zhengmengping/blogPhotos/blob/master/Images/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
                         '<img src="https://github.com/zhengmengping/blogPhotos/blob/master/Images/' + imgNameWithPattern + '?raw=true"/>' +
                       '</a>' +
