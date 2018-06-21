@@ -16,7 +16,7 @@ photo ={
         for (var i = begin; i < end && i < data.length; i++) {
            imgNameWithPattern = data[i].split(' ')[1];
            imgName = imgNameWithPattern.split('.')[0]
-           imageSize = data[i].split(' ')[0];
+           imageSize = (data[i].split(' ')[0])/2;
            imageX = imageSize.split('.')[0];
            imageY = imageSize.split('.')[1];
             li += '<div class="card" style="width:330px">' +
