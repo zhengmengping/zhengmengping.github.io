@@ -1,4 +1,980 @@
-<!doctype html><html class="theme-next pisces use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>!function(e,t,o,c,i,a,n){e.DaoVoiceObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date,a=t.createElement(o),n=t.getElementsByTagName(o)[0],a.async=1,a.src=c,a.charset="utf-8",n.parentNode.insertBefore(a,n)}(window,document,"script",("https:"==document.location.protocol?"https:":"http:")+"//widget.daovoice.io/widget/0f81ff2f.js","daovoice"),daovoice("init",{app_id:"19c300d6"}),daovoice("update")</script><link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css"><meta name="keywords" content="canvas,"><link rel="alternate" href="/atom.xml" title="Healer's Blog" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1"><meta name="keywords" content="canvas"><meta property="og:type" content="article"><meta property="og:title" content="canvas入门（一）"><meta property="og:url" content="http://yoursite.com/2018/06/11/canvas入门/canvas入门/index.html"><meta property="og:site_name" content="Healer&#39;s Blog"><meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528698052121&di=3afe6c1dd4f64bacf4898fb75980a4e7&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F92%2F19%2F15921940-3d2f72ce896b5ad59ccf086e7f6ceb37-0.jpg"><meta property="og:updated_time" content="2018-06-11T12:31:46.318Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="canvas入门（一）"><meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528698052121&di=3afe6c1dd4f64bacf4898fb75980a4e7&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F92%2F19%2F15921940-3d2f72ce896b5ad59ccf086e7f6ceb37-0.jpg"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Pisces",sidebar:{position:"left",display:"always",offset:12,offset_float:0,b2t:!1,scrollpercent:!1},fancybox:!0,motion:!0,duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="http://yoursite.com/2018/06/11/canvas入门/canvas入门/"><title>canvas入门（一） | Healer's Blog</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div> <a href="https://github.com/zhengmengping"><img style="position:absolute;top:0;left:0;border:0" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Healer's Blog</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">世界上最美好的事物都是免费的</p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> 首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br> 分类</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br> 关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-question-circle"></i><br> 归档</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> 标签</a></li><li class="menu-item menu-item-photos"><a href="/photos/" rel="section"><i class="menu-item-icon fa fa-fw fa-camera"></i><br> 相册</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br> 搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/11/canvas入门/canvas入门/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="healer"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Healer's Blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">canvas入门（一）</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-11T11:30:06+08:00">2018-06-11</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/canvas/" itemprop="url" rel="index"><span itemprop="name">canvas</span></a></span></span></div></header><div class="post-body" itemprop="articleBody"><p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1528698052121&amp;di=3afe6c1dd4f64bacf4898fb75980a4e7&amp;imgtype=0&amp;src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F92%2F19%2F15921940-3d2f72ce896b5ad59ccf086e7f6ceb37-0.jpg" alt="图片"></p><a id="more"></a><h1 id="理解canvas元素"><a href="#理解canvas元素" class="headerlink" title="理解canvas元素"></a>理解canvas元素</h1><p>HTML5添加的最受欢迎的元素就是canvas元素。这个元素负责在页面中设置一个区域，然后可以通过JavaScript动态的在这个区域中绘制图形。</p><p>要使用canvas元素，必须先设置其width和height属性，指定可以绘图的区域大小。与其他元素一样，canvas也能通过css为该元素添加样式，如果不添加任何样式或者不绘制任何图形在页面中是看不到该元素的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;canvas id = &quot;drawing&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;A drawing of something.&lt;/canvas&gt;</div></pre></td></tr></table></figure><p>要在这块画布上绘图，需要取得绘图上下文。而取得绘图上下文对象的引用，需要调用getcontext()方法并传入上下文的名字。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var drawing = document.getElementById(&quot;drawing&quot;);</div><div class="line">	//确定浏览器支持&lt;canvas&gt;元素</div><div class="line">	if(drawing.getContext)&#123;</div><div class="line">		var context = drawing.getContext(&quot;2d&quot;);</div><div class="line">		//代码</div><div class="line">	&#125;</div></pre></td></tr></table></figure><p>在使用canvas元素之前，首先要检测getcontext()方法是否存在，这一步非常重要。</p><h1 id="2D上下文"><a href="#2D上下文" class="headerlink" title="2D上下文"></a>2D上下文</h1><p>使用2D绘图上下文提供的方法，可以绘制简单的2D图形，如矩形、弧线和路径等。2D上下文的坐标开始于<canvas>元素的左上角，原点坐标是(0,0)。所有坐标都基于这个原点计算，x值越大表示越靠右，y值越大表示越靠下。默认情况下，width和height表示水平和垂直方向上可用的像素数目。</canvas></p><h1 id="填充和描边"><a href="#填充和描边" class="headerlink" title="填充和描边"></a>填充和描边</h1><p>2D上下文的基本绘图操作是填充和描边。填充，就是用指定的样式（颜色、渐变和图像）填充图形；描边，就是只在图形的边缘画线。大多数2D上下文操作都会细分为填充和描边两个操作，而操作的结果取决于两个属性：fillStyle和strokeStyle。</p><h1 id="绘制矩形"><a href="#绘制矩形" class="headerlink" title="绘制矩形"></a>绘制矩形</h1><p>矩形是唯一一种可以直接在2D上下文中绘制的形状。与矩形有关的方法包括fillRect()、strokeRect()和clearRect()。这三个方法都能接收4个参数：矩形的x坐标、矩形的y坐标、矩形的宽度和高度。这些参数的单位都是像素。</p><h1 id="绘制路径"><a href="#绘制路径" class="headerlink" title="绘制路径"></a>绘制路径</h1><p>2D上下文支持很多在画布上绘制路径的方法。通过路径可以创造出复杂的形状和线条。要绘制路径，首先必须调用beginPath()方法，表示要开始绘制新路径。然后，在调用以下方法来实际地绘制路径。</p><ul><li>arc(x,y,radius,startAngle,endAngle,counterclockwise):以(x,y)为圆心绘制一条弧线，弧线半径为radius，起始和结束角度分别为startAngle和endAngle。最后一个参数表示是否按照逆时针方向计算，值为false表示按顺时针方向计算。</li><li>arcTo(x1,y1,x2,y2,radius):从上一点开始绘制一条弧线，到(x2,y2)为止，并且以给定的半径radius穿过(x1,y1)。</li><li>lineTo(x,y):从上一点开始绘制一条直线，到(x,y)为止。</li><li>moveTo(x,y):将绘图游标移动到(x,y)，不画线。</li></ul><p>创建了路径之后，接下来有几种可能的选择。如果想绘制一条连接到路径起点的线条，可以调用closePath()。如果路径已经完成，你想用fillStyle填充它，可以调用fill方法。另外，还可以调用stroke()方法对路径描边，描边使用的是strokeStyle。最后还可以调用cilp()方法，这个方法可以在路径上创建一个剪切区域。</p><p>下面看一个例子，绘制一个不带数字的时钟表盘。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">var drawing = document.getElementById(&quot;drawing&quot;);</div><div class="line">	//确定浏览器支持&lt;canvas&gt;元素</div><div class="line">	if(drawing.getContext)&#123;</div><div class="line">		var context = drawing.getContext(&quot;2d&quot;);</div><div class="line">		//开始路径</div><div class="line">		context.beginPath();</div><div class="line">		//绘制外圆</div><div class="line">		context.arc(100,100,99,0,2*Math.PI,false);</div><div class="line">		//绘制内圆</div><div class="line">		//在绘制内圆之前，必须把路径移动到内圆上的某一点上，以避免绘制出多余的线条</div><div class="line">		context.moveTo(194,100);</div><div class="line">		context.arc(100,100,94,0,2*Math.PI,false);</div><div class="line">		//绘制分针</div><div class="line">		context.moveTo(100,100);</div><div class="line">		context.lineTo(100,15);</div><div class="line">		//绘制时针</div><div class="line">		context.moveTo(100,100);</div><div class="line">		context.lineTo(35,100);</div><div class="line">		//描边路径</div><div class="line">		//调用stroke()方法，这样才能把图形绘制到画布上</div><div class="line">		context.stroke();</div><div class="line">	&#125;</div></pre></td></tr></table></figure><h1 id="绘制文本"><a href="#绘制文本" class="headerlink" title="绘制文本"></a>绘制文本</h1><p>文本与图形总是如影随行。为此，2D绘图上下文也提供了绘制文本的方法。绘制文本主要有两个方法：fillText()和strokeText()。这两个方法都可以接受4个参数：要绘制的文本字符串、x坐标、y坐标和可选的最大像素宽度。而且，这两个方法都以下列3个属性为基础。</p><ul><li>font:表示文本样式、大小及字体。</li><li>textAlign:表示文本对齐方式。</li><li>textBaseline:表示文本额基线。</li></ul><h1 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h1><p>2D绘制上下文支持各种基本的绘制变换。创建绘制上下文时，会以默认值初始化变换矩阵，在默认的变换矩阵下，所有的处理都按描述直接绘制。可通过如下方法来修改变换矩阵：</p><ul><li>rotate(angle): 围绕原点旋转图像angle角度。旋转角度，以弧度计。如需将角度转换为弧度，须使用公式degress<em>math.pi/180公式进行计算。例：如需旋转5度，可按如下公式进行计算：5</em>math.pi/180 。</li><li>scale(scalex,scaley):缩放图像。</li><li>transate(x,y):将坐标原点移动到(x,y)。</li><li><p>transform(m1_1,m1_2,m2_1,m2_2, x,y): 直接修改变换矩阵，方式是乘以如下矩阵。</p><p>m1_1 m1_2 dx</p><p>m2_1 m2_2 dy</p><p>0 0 1</p></li><li><p>setTransform(m1_1,m1_2,m2_1,m2_2,x,y): 将变换矩阵重置为默认状态，然后再调用transform()方法。</p></li></ul><p>变换有可能很简单，但也可能很复杂，这都要视情况而定。</p><p>无论是刚才执行的变换，还是fillStyle、strokeStyle等属性，都会在当前上下文中一直有效，除非再对上下文进行什么修改。虽然没有什么办法把上下文中的一切都重置为默认值，但有两个方法可以跟踪上下文的状态变化。如果你知道将来还要返回某组属性与变换的组合，可以调用save()方法。调用这个方法后，当时的所有设置都会进入一个栈结构，得以妥善保存。然后可以对上下文进行其他修改。等想要回到之前保存的设置时，可以调用restore()方法，在保存设置的栈结构中向前返回一级，恢复之前的状态。连续调用save()可以把更多的设置保存到栈结构中，之后再连续调用restore()则得以一级一级返回。需要注意的是，save()方法保存的只是对绘图上下文的设置和变换，不会保存绘图上下文的内容。</p><h1 id="绘制图像"><a href="#绘制图像" class="headerlink" title="绘制图像"></a>绘制图像</h1><p>2d绘制上下文内置了对图像的支持。如果你先想把一幅图像绘制到画布上，可以使用drawimage()方法。最简单的调用方式是传入一个<code>html&lt;img&gt;</code>元素，以及绘制该图像的起点的x和y坐标。例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var image = document.images[0];</div><div class="line">context.drawImage(img,10,10);</div></pre></td></tr></table></figure><p>这两行代码取得了文档中的第一幅图像，然后将它绘制到上下文中，起点为(10,10)。</p><p>还可以选择把图像中的某个区域绘制到上下文中。drawimage()方法的这种调用总共需要传入9个参数：要绘制的图像，源图像的x坐标，源图像的y坐标，源图像的宽度，源图像的高度，目标图像的x坐标，目标图像的y坐标，目标图像的宽度，目标图像的高度。这样调用drawimage()方法可以获得最多的控制。例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.drawImage(img,0,10,50,50,0,100,40,60);</div></pre></td></tr></table></figure><p>这行代码只会把原始图像的一部分绘制到画布上。原始图像的这一部分的起点为(0,10)，宽和高都是50像素。最终绘制到上下文中的图像的起点是(0,100)，而大小变成了40×60像素。</p><h1 id="阴影"><a href="#阴影" class="headerlink" title="阴影"></a>阴影</h1><p>2D上下文会根据以下几个属性的值，自动为形状或路径绘制出阴影。</p><ul><li>shadowColor:用CSS颜色格式表示的阴影颜色，默认为黑色。</li><li>shadowOffsetX:形状或路径x轴方向的阴影偏移量，默认为0。</li><li>shadowOffsetY:形状或路径y轴方向的阴影偏移量，默认为0。</li><li>shadowBlur:模糊的像素数，默认0，即不模糊。</li></ul><h1 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h1><p>渐变由CanvasGradient实例表示，很容易通过2D上下文来创建和修改。要创建一个新的线性渐变，可以调用createGradient()方法。这个方法接受4个参数：起点的x坐标、起点的y坐标、终点的x坐标、终点的y坐标。调用这个方法后，它会创建一个指定大小的渐变，并返回CanvasGradient对象的实例。</p><p>创建了渐变对象之后，下一步就是使用addColorStop()方法来指定色标。这个方法接收两个参数：色标位置和CSS颜色值。色标位置是一个0(开始的颜色)到1(结束的颜色)之间的数字。例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var gradient = context.createLinearGradient(30,30,70,70);</div><div class="line">gradient.addColor(0,&quot;white&quot;);</div><div class="line">gradient.addColor(1,&quot;black&quot;);</div></pre></td></tr></table></figure></div><div></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-tags"><a href="/tags/canvas/" rel="tag"><i class="fa fa-tag"></i> canvas</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2018/06/07/Hexo-Next-添加点击爱心效果/index/index/" rel="next" title="Hexo Next 添加点击爱心效果"><i class="fa fa-chevron-left"></i> Hexo Next 添加点击爱心效果</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/2018/06/11/如何把本地项目上传至github仓库/如何把本地项目上传至github仓库/" rel="prev" title="如何把本地项目上传至github仓库">如何把本地项目上传至github仓库<i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="post-spread"></div></div></div><div class="comments" id="comments"><div id="gitalk-container"></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=32192436&auto=0&height=66"></iframe><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview"> 站点概览</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="healer"><p class="site-author-name" itemprop="name">healer</p><p class="site-description motion-element" itemprop="description">世间万物唯有美食与爱不可辜负</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">17</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">12</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">19</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/zhengmengping" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span><span class="links-of-author-item"><a href="https://www.jianshu.com/" target="_blank" title="简书"><i class="fa fa-fw fa-heartbeat"></i> 简书</a></span><span class="links-of-author-item"><a href="http://baidu.com/" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i> Twitter</a></span><span class="links-of-author-item"><a href="https://weibo.com/" target="_blank" title="Weibo"><i class="fa fa-fw fa-weibo"></i> Weibo</a></span><span class="links-of-author-item"><a href="https://www.csdn.net/" target="_blank" title="csdn"><i class="fa fa-fw fa-crosshairs"></i> csdn</a></span><span class="links-of-author-item"><a href="https://juejin.im/" target="_blank" title="掘金"><i class="fa fa-fw fa-spinner"></i> 掘金</a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-inline"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-globe"></i></div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"> <a href="http://www.uisdc.com/" title="优设" target="_blank">优设</a></li><li class="links-of-blogroll-item"> <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a></li><li class="links-of-blogroll-item"> <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a></li><li class="links-of-blogroll-item"> <a href="http://www.36zhen.com/t?id=3448" title="前端书籍资料" target="_blank">前端书籍资料</a></li><li class="links-of-blogroll-item"> <a href="http://ife.baidu.com/" title="百度前端技术学院" target="_blank">百度前端技术学院</a></li><li class="links-of-blogroll-item"> <a href="http://wf.uisdc.com/cn/" title="google前端开发基础" target="_blank">google前端开发基础</a></li></ul></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#理解canvas元素"><span class="nav-number">1.</span> <span class="nav-text">理解canvas元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2D上下文"><span class="nav-number">2.</span> <span class="nav-text">2D上下文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#填充和描边"><span class="nav-number">3.</span> <span class="nav-text">填充和描边</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制矩形"><span class="nav-number">4.</span> <span class="nav-text">绘制矩形</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制路径"><span class="nav-number">5.</span> <span class="nav-text">绘制路径</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制文本"><span class="nav-number">6.</span> <span class="nav-text">绘制文本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变换"><span class="nav-number">7.</span> <span class="nav-text">变换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制图像"><span class="nav-number">8.</span> <span class="nav-text">绘制图像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阴影"><span class="nav-number">9.</span> <span class="nav-text">阴影</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#渐变"><span class="nav-number">10.</span> <span class="nav-text">渐变</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright"> &copy; <span itemprop="copyrightYear">2018</span><span class="with-love"><i class="fa fa-heart"></i></span> <span class="author" itemprop="copyrightHolder">healer</span></div><div class="powered-by"><i class="fa fa-user-md"></i> <span id="busuanzi_container_site_uv">本站访客数:<span id="busuanzi_value_site_uv"></span></span></div><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="powered-by"> 由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div><div class="theme-info"> 主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script><script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script><script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script><script type="text/javascript">var gitalk=new Gitalk({clientID:"8d8b607014578ba8740d",clientSecret:"4445328411b03e599d47842123982d2e0df0b353",repo:"zhengmengping.github.io",owner:"zhengmengping",admin:["zhengmengping"],id:md5(window.location.pathname),distractionFreeMode:"true"});gitalk.render("gitalk-container")</script><script type="text/javascript">
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "19c300d6"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="canvas," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Healer's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="keywords" content="canvas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="canvas入门（一）">
+<meta property="og:url" content="http://yoursite.com/2018/06/11/canvas入门/canvas入门/index.html">
+<meta property="og:site_name" content="Healer&#39;s Blog">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528698052121&di=3afe6c1dd4f64bacf4898fb75980a4e7&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F92%2F19%2F15921940-3d2f72ce896b5ad59ccf086e7f6ceb37-0.jpg">
+<meta property="og:updated_time" content="2018-06-11T12:31:46.318Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="canvas入门（一）">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528698052121&di=3afe6c1dd4f64bacf4898fb75980a4e7&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F92%2F19%2F15921940-3d2f72ce896b5ad59ccf086e7f6ceb37-0.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/11/canvas入门/canvas入门/"/>
+
+
+
+
+
+  <title>canvas入门（一） | Healer's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+    <a href="https://github.com/zhengmengping"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Healer's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">世界上最美好的事物都是免费的</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-photos">
+          <a href="/photos/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-camera"></i> <br />
+            
+            相册
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/11/canvas入门/canvas入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="healer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Healer's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">canvas入门（一）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-11T11:30:06+08:00">
+                2018-06-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/canvas/" itemprop="url" rel="index">
+                    <span itemprop="name">canvas</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1528698052121&amp;di=3afe6c1dd4f64bacf4898fb75980a4e7&amp;imgtype=0&amp;src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F92%2F19%2F15921940-3d2f72ce896b5ad59ccf086e7f6ceb37-0.jpg" alt="图片"></p>
+<a id="more"></a>
+<h1 id="理解canvas元素"><a href="#理解canvas元素" class="headerlink" title="理解canvas元素"></a>理解canvas元素</h1><p>HTML5添加的最受欢迎的元素就是canvas元素。这个元素负责在页面中设置一个区域，然后可以通过JavaScript动态的在这个区域中绘制图形。</p>
+<p>要使用canvas元素，必须先设置其width和height属性，指定可以绘图的区域大小。与其他元素一样，canvas也能通过css为该元素添加样式，如果不添加任何样式或者不绘制任何图形在页面中是看不到该元素的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;canvas id = &quot;drawing&quot; width=&quot;200&quot; height=&quot;200&quot;&gt;A drawing of something.&lt;/canvas&gt;</div></pre></td></tr></table></figure>
+<p>要在这块画布上绘图，需要取得绘图上下文。而取得绘图上下文对象的引用，需要调用getcontext()方法并传入上下文的名字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var drawing = document.getElementById(&quot;drawing&quot;);</div><div class="line">	//确定浏览器支持&lt;canvas&gt;元素</div><div class="line">	if(drawing.getContext)&#123;</div><div class="line">		var context = drawing.getContext(&quot;2d&quot;);</div><div class="line">		//代码</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<p>在使用canvas元素之前，首先要检测getcontext()方法是否存在，这一步非常重要。</p>
+<h1 id="2D上下文"><a href="#2D上下文" class="headerlink" title="2D上下文"></a>2D上下文</h1><p>使用2D绘图上下文提供的方法，可以绘制简单的2D图形，如矩形、弧线和路径等。2D上下文的坐标开始于<canvas>元素的左上角，原点坐标是(0,0)。所有坐标都基于这个原点计算，x值越大表示越靠右，y值越大表示越靠下。默认情况下，width和height表示水平和垂直方向上可用的像素数目。</canvas></p>
+<h1 id="填充和描边"><a href="#填充和描边" class="headerlink" title="填充和描边"></a>填充和描边</h1><p>2D上下文的基本绘图操作是填充和描边。填充，就是用指定的样式（颜色、渐变和图像）填充图形；描边，就是只在图形的边缘画线。大多数2D上下文操作都会细分为填充和描边两个操作，而操作的结果取决于两个属性：fillStyle和strokeStyle。</p>
+<h1 id="绘制矩形"><a href="#绘制矩形" class="headerlink" title="绘制矩形"></a>绘制矩形</h1><p>矩形是唯一一种可以直接在2D上下文中绘制的形状。与矩形有关的方法包括fillRect()、strokeRect()和clearRect()。这三个方法都能接收4个参数：矩形的x坐标、矩形的y坐标、矩形的宽度和高度。这些参数的单位都是像素。</p>
+<h1 id="绘制路径"><a href="#绘制路径" class="headerlink" title="绘制路径"></a>绘制路径</h1><p>2D上下文支持很多在画布上绘制路径的方法。通过路径可以创造出复杂的形状和线条。要绘制路径，首先必须调用beginPath()方法，表示要开始绘制新路径。然后，在调用以下方法来实际地绘制路径。</p>
+<ul>
+<li>arc(x,y,radius,startAngle,endAngle,counterclockwise):以(x,y)为圆心绘制一条弧线，弧线半径为radius，起始和结束角度分别为startAngle和endAngle。最后一个参数表示是否按照逆时针方向计算，值为false表示按顺时针方向计算。</li>
+<li>arcTo(x1,y1,x2,y2,radius):从上一点开始绘制一条弧线，到(x2,y2)为止，并且以给定的半径radius穿过(x1,y1)。</li>
+<li>lineTo(x,y):从上一点开始绘制一条直线，到(x,y)为止。</li>
+<li>moveTo(x,y):将绘图游标移动到(x,y)，不画线。</li>
+</ul>
+<p>创建了路径之后，接下来有几种可能的选择。如果想绘制一条连接到路径起点的线条，可以调用closePath()。如果路径已经完成，你想用fillStyle填充它，可以调用fill方法。另外，还可以调用stroke()方法对路径描边，描边使用的是strokeStyle。最后还可以调用cilp()方法，这个方法可以在路径上创建一个剪切区域。</p>
+<p>下面看一个例子，绘制一个不带数字的时钟表盘。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">var drawing = document.getElementById(&quot;drawing&quot;);</div><div class="line">	//确定浏览器支持&lt;canvas&gt;元素</div><div class="line">	if(drawing.getContext)&#123;</div><div class="line">		var context = drawing.getContext(&quot;2d&quot;);</div><div class="line">		//开始路径</div><div class="line">		context.beginPath();</div><div class="line">		//绘制外圆</div><div class="line">		context.arc(100,100,99,0,2*Math.PI,false);</div><div class="line">		//绘制内圆</div><div class="line">		//在绘制内圆之前，必须把路径移动到内圆上的某一点上，以避免绘制出多余的线条</div><div class="line">		context.moveTo(194,100);</div><div class="line">		context.arc(100,100,94,0,2*Math.PI,false);</div><div class="line">		//绘制分针</div><div class="line">		context.moveTo(100,100);</div><div class="line">		context.lineTo(100,15);</div><div class="line">		//绘制时针</div><div class="line">		context.moveTo(100,100);</div><div class="line">		context.lineTo(35,100);</div><div class="line">		//描边路径</div><div class="line">		//调用stroke()方法，这样才能把图形绘制到画布上</div><div class="line">		context.stroke();</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h1 id="绘制文本"><a href="#绘制文本" class="headerlink" title="绘制文本"></a>绘制文本</h1><p>文本与图形总是如影随行。为此，2D绘图上下文也提供了绘制文本的方法。绘制文本主要有两个方法：fillText()和strokeText()。这两个方法都可以接受4个参数：要绘制的文本字符串、x坐标、y坐标和可选的最大像素宽度。而且，这两个方法都以下列3个属性为基础。</p>
+<ul>
+<li>font:表示文本样式、大小及字体。</li>
+<li>textAlign:表示文本对齐方式。</li>
+<li>textBaseline:表示文本额基线。</li>
+</ul>
+<h1 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h1><p>2D绘制上下文支持各种基本的绘制变换。创建绘制上下文时，会以默认值初始化变换矩阵，在默认的变换矩阵下，所有的处理都按描述直接绘制。可通过如下方法来修改变换矩阵：</p>
+<ul>
+<li>rotate(angle): 围绕原点旋转图像angle角度。旋转角度，以弧度计。如需将角度转换为弧度，须使用公式degress<em>math.pi/180公式进行计算。例：如需旋转5度，可按如下公式进行计算：5</em>math.pi/180 。</li>
+<li>scale(scalex,scaley):缩放图像。</li>
+<li>transate(x,y):将坐标原点移动到(x,y)。</li>
+<li><p>transform(m1_1,m1_2,m2_1,m2_2, x,y): 直接修改变换矩阵，方式是乘以如下矩阵。</p>
+<p>m1_1   m1_2   dx</p>
+<p>m2_1   m2_2   dy</p>
+<p>0     0     1</p>
+</li>
+<li><p>setTransform(m1_1,m1_2,m2_1,m2_2,x,y): 将变换矩阵重置为默认状态，然后再调用transform()方法。</p>
+</li>
+</ul>
+<p>变换有可能很简单，但也可能很复杂，这都要视情况而定。</p>
+<p>无论是刚才执行的变换，还是fillStyle、strokeStyle等属性，都会在当前上下文中一直有效，除非再对上下文进行什么修改。虽然没有什么办法把上下文中的一切都重置为默认值，但有两个方法可以跟踪上下文的状态变化。如果你知道将来还要返回某组属性与变换的组合，可以调用save()方法。调用这个方法后，当时的所有设置都会进入一个栈结构，得以妥善保存。然后可以对上下文进行其他修改。等想要回到之前保存的设置时，可以调用restore()方法，在保存设置的栈结构中向前返回一级，恢复之前的状态。连续调用save()可以把更多的设置保存到栈结构中，之后再连续调用restore()则得以一级一级返回。需要注意的是，save()方法保存的只是对绘图上下文的设置和变换，不会保存绘图上下文的内容。</p>
+<h1 id="绘制图像"><a href="#绘制图像" class="headerlink" title="绘制图像"></a>绘制图像</h1><p>2d绘制上下文内置了对图像的支持。如果你先想把一幅图像绘制到画布上，可以使用drawimage()方法。最简单的调用方式是传入一个<code>html&lt;img&gt;</code>元素，以及绘制该图像的起点的x和y坐标。例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var image = document.images[0];</div><div class="line">context.drawImage(img,10,10);</div></pre></td></tr></table></figure>
+<p>这两行代码取得了文档中的第一幅图像，然后将它绘制到上下文中，起点为(10,10)。</p>
+<p>还可以选择把图像中的某个区域绘制到上下文中。drawimage()方法的这种调用总共需要传入9个参数：要绘制的图像，源图像的x坐标，源图像的y坐标，源图像的宽度，源图像的高度，目标图像的x坐标，目标图像的y坐标，目标图像的宽度，目标图像的高度。这样调用drawimage()方法可以获得最多的控制。例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.drawImage(img,0,10,50,50,0,100,40,60);</div></pre></td></tr></table></figure>
+<p>这行代码只会把原始图像的一部分绘制到画布上。原始图像的这一部分的起点为(0,10)，宽和高都是50像素。最终绘制到上下文中的图像的起点是(0,100)，而大小变成了40×60像素。</p>
+<h1 id="阴影"><a href="#阴影" class="headerlink" title="阴影"></a>阴影</h1><p>2D上下文会根据以下几个属性的值，自动为形状或路径绘制出阴影。</p>
+<ul>
+<li>shadowColor:用CSS颜色格式表示的阴影颜色，默认为黑色。</li>
+<li>shadowOffsetX:形状或路径x轴方向的阴影偏移量，默认为0。</li>
+<li>shadowOffsetY:形状或路径y轴方向的阴影偏移量，默认为0。</li>
+<li>shadowBlur:模糊的像素数，默认0，即不模糊。</li>
+</ul>
+<h1 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h1><p>渐变由CanvasGradient实例表示，很容易通过2D上下文来创建和修改。要创建一个新的线性渐变，可以调用createGradient()方法。这个方法接受4个参数：起点的x坐标、起点的y坐标、终点的x坐标、终点的y坐标。调用这个方法后，它会创建一个指定大小的渐变，并返回CanvasGradient对象的实例。</p>
+<p>创建了渐变对象之后，下一步就是使用addColorStop()方法来指定色标。这个方法接收两个参数：色标位置和CSS颜色值。色标位置是一个0(开始的颜色)到1(结束的颜色)之间的数字。例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var gradient = context.createLinearGradient(30,30,70,70);</div><div class="line">gradient.addColor(0,&quot;white&quot;);</div><div class="line">gradient.addColor(1,&quot;black&quot;);</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+    
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/canvas/" rel="tag"><i class="fa fa-tag"></i> canvas</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/07/Hexo-Next-添加点击爱心效果/index/index/" rel="next" title="Hexo Next 添加点击爱心效果">
+                <i class="fa fa-chevron-left"></i> Hexo Next 添加点击爱心效果
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/11/如何把本地项目上传至github仓库/如何把本地项目上传至github仓库/" rel="prev" title="如何把本地项目上传至github仓库">
+                如何把本地项目上传至github仓库 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+      
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=32192436&auto=0&height=66"></iframe>
+      
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="healer" />
+          <p class="site-author-name" itemprop="name">healer</p>
+           
+              <p class="site-description motion-element" itemprop="description">世间万物唯有美食与爱不可辜负</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zhengmengping" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.jianshu.com/" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-heartbeat"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://baidu.com/" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://weibo.com/" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.csdn.net/" target="_blank" title="csdn">
+                  
+                    <i class="fa fa-fw fa-crosshairs"></i>
+                  
+                  csdn
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://juejin.im/" target="_blank" title="掘金">
+                  
+                    <i class="fa fa-fw fa-spinner"></i>
+                  
+                  掘金
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.uisdc.com/" title="优设" target="_blank">优设</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.36zhen.com/t?id=3448" title="前端书籍资料" target="_blank">前端书籍资料</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://ife.baidu.com/" title="百度前端技术学院" target="_blank">百度前端技术学院</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://wf.uisdc.com/cn/" title="google前端开发基础" target="_blank">google前端开发基础</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#理解canvas元素"><span class="nav-number">1.</span> <span class="nav-text">理解canvas元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2D上下文"><span class="nav-number">2.</span> <span class="nav-text">2D上下文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#填充和描边"><span class="nav-number">3.</span> <span class="nav-text">填充和描边</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制矩形"><span class="nav-number">4.</span> <span class="nav-text">绘制矩形</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制路径"><span class="nav-number">5.</span> <span class="nav-text">绘制路径</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制文本"><span class="nav-number">6.</span> <span class="nav-text">绘制文本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变换"><span class="nav-number">7.</span> <span class="nav-text">变换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#绘制图像"><span class="nav-number">8.</span> <span class="nav-text">绘制图像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阴影"><span class="nav-number">9.</span> <span class="nav-text">阴影</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#渐变"><span class="nav-number">10.</span> <span class="nav-text">渐变</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+          
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">healer</span>
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '8d8b607014578ba8740d',
+          clientSecret: '4445328411b03e599d47842123982d2e0df0b353',
+          repo: 'zhengmengping.github.io',
+          owner: 'zhengmengping',
+          admin: ['zhengmengping'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -313,4 +1289,35 @@
         onPopupClose();
       }
     });
-  </script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script><script type="text/javascript" src="https://unpkg.com/minigrid@3.1.1/dist/minigrid.min.js"></script><link rel="stylesheet" href="/photos/photos.css"><script type="text/javascript" src="/photos/photo.js"></script><script type="text/javascript" src="/js/src/clicklove.js"></script><script>!function(t,e,o,c,n,i,a){t.DaoVoiceObject=n,t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},t[n].l=1*new Date,i=e.createElement(o),a=e.getElementsByTagName(o)[0],i.async=1,i.src=c,i.charset="utf-8",a.parentNode.insertBefore(i,a)}(window,document,"script",("https:"==document.location.protocol?"https:":"http:")+"//widget.daovoice.io/widget/19c300d6.js","daovoice")</script><script type="text/javascript" src="/js/src/crash_cheat.js"></script></body></html>
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+<!-- 相册 -->
+<script type="text/javascript" src="https://unpkg.com/minigrid@3.1.1/dist/minigrid.min.js"></script>
+<link rel="stylesheet" href="/photos/photos.css">
+<script type="text/javascript" src="/photos/photo.js"></script>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/19c300d6.js","daovoice")</script>
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+</body>
+</html>
