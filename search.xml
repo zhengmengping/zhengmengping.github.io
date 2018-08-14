@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js基础-数组]]></title>
+    <url>%2F2018%2F08%2F14%2Fjs%E5%9F%BA%E7%A1%80-%E6%95%B0%E7%BB%84%2Fjs%E5%9F%BA%E7%A1%80-%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[ES5新增的5个数组迭代方法 （1）every():对数组中的每一项给定函数，如果对该函数的每一项都返回true，则返回true.]]></content>
+      <categories>
+        <category>js基础</category>
+      </categories>
+      <tags>
+        <tag>js基础 数组操作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[jQuery(1)]]></title>
     <url>%2F2018%2F06%2F20%2FjQuery(1)%2FjQuery(1)%2F</url>
     <content type="text"><![CDATA[jQuery框架中$.ajax()的常用参数有哪些？写一个post请求并带有发送数据和返回数据的样例。 async：是否异步 url：请求地址 contentType：发送信息至服务器时内容编码类型 data：发送到服务器的数据 dataType：预期服务器返回的数据类型 type：请求类型 success：请求成功回调函数 error：请求失败回调函数 12345678910$.ajax(&#123; url:&apos;...&apos;, type:&apos;post&apos;, data:&#123; id:1 &#125;, success:function(data)&#123; alert(data); &#125;&#125;) jQuery一个对象可以同时绑定多个事件，如何实现的？多个事件同一个函数$(&#39;#div&#39;).on(&#39;click mouseover&#39;,function(){}); 多个事件不同函数12345678$(&apos;#div&apos;).on(&#123; click:function()&#123; ... &#125;, mouseover:function()&#123; ... &#125;&#125;) jQuery的slideUp动画，如果目标元素是被外部事件驱动，当鼠标快速地连续触发外部事件元素，动画会滞后的反复执行，该如何处理？jQuery.stop(); 如：$(&#39;#div&#39;).stop().animate({width:&#39;100px&#39;,100}); jQuery停止动画事件： 1234567$(&quot;#div&quot;).stop();//停止当前动画，继续下一个动画 $(&quot;#div&quot;).stop(true);//清除元素的所有动画 $(&quot;#div&quot;).stop(false, true);//让当前动画直接到达末状态 ，继续下一个动画$(&quot;#div&quot;).stop(true, true);//清除元素的所有动画，让当前动画直接到达末状态 jquery.extend与jquery.fn.extend的区别?jquery.extend为jquery类添加类方法，可以理解为静态方法 jquery.fn.extend在源码中jquery.fn==jquery.prototype，所以对jquery.fn的扩展，就是为jquery类添加成员函数 使用：jquery.extend扩展，需要通过jquery类来调用，而jquery.fn.extend扩展，所有jquery实例都可以直接调用。 jquery与jquery UI有啥区别？jquery是一个js库，主要提供的功能是选择器，属性修改和事件绑定等。 jquery UI则是在jquery的基础上，利用jquery的扩展性，设计的插件。提供了一些常用的界面元素，诸如对话框、拖动行为、改变大小行为等等。 jquery中如何将数组转换为json字符串，然后再转换回来？jquery中没有提供这个功能，所以你需要先编写两个jquery的扩展： 123456$.fn.stringifyArray = function(array)&#123; return JSON.stringify(array)&#125;$.fn.parseArray = function(array)&#123; return JSON.parse(array)&#125; 然后调用： $(&quot;&quot;).stringifyArray(array) 针对jquery的优化方法？ 基于class的选择器的性能相对于id选择器开销很大，因为需要遍历所有的DOM元素。优先使用ID选择器。 频繁的DOM操作，先缓存起来再操作。用jquery的链式调用更好。 如：var str = $(&quot;a&quot;).attr(&quot;href&quot;); for循环每一次都查找了数组arr的length属性，在开始循环的时候设置一个变量来存储这个数字，可以让循环跑的更快。 for (var i = size, length = arr.length; i &lt; length; i++) {} jquery.fn的init方法返回的this指的是什么对象？为什么要返回this？this执行init构造函数自身，其实就是jquery实例对象，返回this是为了实现jquery的链式操作。]]></content>
