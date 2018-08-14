@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[js基础-数组]]></title>
     <url>%2F2018%2F08%2F14%2Fjs%E5%9F%BA%E7%A1%80-%E6%95%B0%E7%BB%84%2Fjs%E5%9F%BA%E7%A1%80-%E6%95%B0%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[ES5新增的5个数组迭代方法 （1）every():对数组中的每一项给定函数，如果对该函数的每一项都返回true，则返回true.]]></content>
+    <content type="text"><![CDATA[ES5新增的5个数组迭代方法###（1）every():对数组中的每一项给定函数，如果对该函数的每一项都返回true，则返回true. 12345678var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];var everyResult = numbers.every(function(item, index, array) &#123; return (item &gt; 2);&#125;);alert(everyResult); //false (2)some():对数组中的每一项运行给定函数，如果该函数对任一项返回true，则返回true。12345678var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];var someResult = numbers.some(function(item, index, array) &#123; return (item &gt; 2);&#125;);alert(someResult); //true (3)forEach():对数组中的每一项运行给定函数。这个方法没有返回值。1234var numbers = [1,2,3,4,5,4,3,2,1];numbers.forEach(function(item, index, array)&#123; //执行某些操作&#125;); (4)filter():对数组中的每一项运行给定函数，返回该函数会返回true 的项组成的数组。12345678var numbers = [1,2,3,4,5,4,3,2,1];var filterResult = numbers.filter(function(item, index, array)&#123; return (item &gt; 2);&#125;);alert(filterResult); //[3,4,5,4,3] (5)map()：对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。12345678var numbers = [1,2,3,4,5,4,3,2,1];var mapResult = numbers.map(function(item, index, array)&#123; return item * 2;&#125;);alert(mapResult); //[2,4,6,8,10,8,6,4,2]]]></content>
       <categories>
         <category>js基础</category>
       </categories>
