@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-16T11:59:19.190Z</updated>
+  <updated>2018-08-21T06:43:40.884Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>纯css创建图形</title>
+    <link href="http://yoursite.com/2018/08/21/%E7%BA%AFcss%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2/%E7%BA%AFcss%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2/"/>
+    <id>http://yoursite.com/2018/08/21/纯css创建图形/纯css创建图形/</id>
+    <published>2018-08-21T06:24:17.000Z</published>
+    <updated>2018-08-21T06:43:40.884Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2481935099,56966843&amp;fm=26&amp;gp=0.jpg" alt="图片描述"></p><a id="more"></a><h3 id="用css创建三角形"><a href="#用css创建三角形" class="headerlink" title="用css创建三角形"></a>用css创建三角形</h3><ul><li>保证元素是块级元素</li><li>设置元素的边框</li><li>不需要显示的边框使用透明色</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">div&#123;  </div><div class="line">     width:0;  </div><div class="line">     height:0;  </div><div class="line">     margin:0 auto;  </div><div class="line">     border:6px solid transparent;  </div><div class="line">     border-top: 6px solid red;  </div><div class="line"> &#125;</div></pre></td></tr></table></figure><h3 id="用css创建等腰梯形"><a href="#用css创建等腰梯形" class="headerlink" title="用css创建等腰梯形"></a>用css创建等腰梯形</h3><p>梯形的下底宽度为矩形“左右边框”的宽度加上矩形的宽度，上底的宽度等于矩形的宽度，梯形的高度为下边框的宽度。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot; /&gt;</div><div class="line">&lt;title&gt;测试&lt;/title&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">div &#123;</div><div class="line"> width:120px;height:0;margin:100px auto;</div><div class="line"> border-left:80px solid transparent;</div><div class="line"> border-right:80px solid transparent;</div><div class="line"> border-bottom:150px solid #8900CE;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure><h3 id="用css创建上底在下方的直角梯形"><a href="#用css创建上底在下方的直角梯形" class="headerlink" title="用css创建上底在下方的直角梯形"></a>用css创建上底在下方的直角梯形</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot; /&gt;</div><div class="line">&lt;title&gt;测试&lt;/title&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">div &#123;</div><div class="line"> width:120px;height:0;margin:100px auto;</div><div class="line"> border-left:80px solid transparent;</div><div class="line"> border-top:150px solid #00C1AE;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure><h3 id="用css创建六边形"><a href="#用css创建六边形" class="headerlink" title="用css创建六边形"></a>用css创建六边形</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;utf-8&quot; /&gt;</div><div class="line">&lt;title&gt;测试&lt;/title&gt;</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">.div1 &#123;</div><div class="line"> width:160px;height:0;margin:100px auto 0 auto;</div><div class="line"> border-left:75px solid transparent;</div><div class="line"> border-right:75px solid transparent;</div><div class="line"> border-bottom:135px solid #53CC62;</div><div class="line">&#125;</div><div class="line">.div2 &#123;</div><div class="line"> width:160px;height:0;margin:0px auto;</div><div class="line"> border-left:75px solid transparent;</div><div class="line"> border-right:75px solid transparent;</div><div class="line"> border-top:135px solid #53CC62;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;div class=&quot;div1&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;div class=&quot;div2&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2481935099,56966843&amp;amp;fm=26&amp;amp;gp=0.jpg&quot; alt=&quot;图片描述&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>web性能优化-首屏和白屏问题</title>
@@ -85,9 +107,9 @@
       <category term="css" scheme="http://yoursite.com/categories/%E5%B8%83%E5%B1%80/css/"/>
     
     
-      <category term="布局" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B1%80/"/>
-    
       <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="布局" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B1%80/"/>
     
   </entry>
   
@@ -461,30 +483,6 @@
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>剑指offer(2):替换空格</title>
-    <link href="http://yoursite.com/2017/09/10/offer/%E5%89%91%E6%8C%87offer(2)/"/>
-    <id>http://yoursite.com/2017/09/10/offer/剑指offer(2)/</id>
-    <published>2017-09-10T12:36:37.000Z</published>
-    <updated>2018-06-07T09:18:35.877Z</updated>
-    
-    <content type="html"><![CDATA[<p>题目：请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。<br><a id="more"></a><br>function replaceSpace(str)<br>{<br>    return str.replace(/\s/g,’%20’);<br>}<br>思路：用正则表达式查找数字组中的所有空格，然后用str.replace替换。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;题目：请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="剑指offer" scheme="http://yoursite.com/categories/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
-    
-      <category term="数组" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
